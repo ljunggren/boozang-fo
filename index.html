@@ -108,13 +108,13 @@ the same directory as index.html, this should be &quot;/&quot; or blank. Another
 <dt>Pop Window Style</dt>
 <dd>This allows you to put custom CSS for the tool-set window. By doing this the tool can be sized and positioned the same way every time it is launched.</dd>
 <dt>Wait Threshold</dt>
-<dd>Wensheng</dd>
+<dd>Default value for maximum wait for validation. Can be overridden on a per action basis.</dd>
 <dt>Step Interval</dt>
 <dd>This is the step delay when re-playing a test in slow mode.</dd>
 <dt>Data Page URL</dt>
-<dd>Wensheng</dd>
+<dd>Entry URL for an API end-point.</dd>
 </dl>
-<p>Checkboxes</p>
+<h5 id="check-boxes">Check-boxes</h5>
 <dl>
 <dt>Auto Show Test Report after testing</dt>
 <dd>This means test report will be shown after each test run.</dd>
@@ -135,10 +135,10 @@ a new event every 50 px. </dd>
 <dd>It's here possible to allow the user to show the DOM tree mask when recording. This will highlight the exact element in the DOM tree where the
 trigger event is generated.</dd>
 </dl>
-<p>Checkboxes</p>
+<h5 id="check-boxes-1">Check-boxes</h5>
 <dl>
 <dt>Ignore Click on Input</dt>
-<dd>Wensheng</dd>
+<dd>If checked clicking on input doesn't generate a separate event. If un-checked, every time an input is clicked it generates an event. This is normally not needed.</dd>
 </dl>
 <h3 id="dom-strategy">DOM Strategy</h3>
 <p>This is arguably the most important setting of the Boozang tool. The DOM Strategy allows you to configure how the tool uniquely identifies an
@@ -157,7 +157,7 @@ blank. To support dynamic Ids, you can use Regexp ignore. As can be seen in the 
 <dt>Contains text</dt>
 <dd>In some cases, when ids cannot be enforced on all items, it's sometimes useful to match on the contents of an element.</dd>
 <dt>DOM</dt>
-<dd>Wensheng</dd>
+<dd>When clicked an auto-validation is added on each an every record step.</dd>
 </dl>
 <h3 id="validation-ignore">Validation Ignore</h3>
 <p>Sets the default attributes that are ignored when creating a validation. The attributes not ignored will be included in the asserts-equals condition
@@ -172,11 +172,14 @@ being build when doing a validation. This can also be set on each validation act
 <dd>Any other elements that should be ignored</dd>
 </dl>
 <h3 id="subscriptions">Subscriptions</h3>
-<p>This allows you to setup email notification for test runs. The options are self-explanatory.</p>
-<p>Wensheng </p>
+<p>This allows you to setup email notification for test runs. </p>
+<dl>
+<dt>Server Host</dt>
+<dd>Which server you want to send test reports to.</dd>
+</dl>
 <p><img src="images/settings_subscription.png" alt="example image" title="An exemplary image" /></p>
 <h3 id="service">Service</h3>
-<p>Wensheng</p>
+<p>This is a experimental screen for posting TR reports and screen-shots to an external API.</p>
 <p><img src="images/settings_service.png" alt="example image" title="An exemplary image" /></p>
 <h2 id="test-view">Test View</h2>
 <p>The main test view is shown as soon as a test is selected in the left-hand tree navigation.</p>
@@ -218,7 +221,8 @@ being build when doing a validation. This can also be set on each validation act
 <dt>Breakpoint</dt>
 <dd>A breakpoint. Test execution will stop at active breakpoint. Click to toggle breakpoint.</dd>
 <dt>Delay</dt>
-<dd>Wensheng</dd>
+<dd>Here a minimum or maximum wait threshold can be set. The maximum threshold overrides the values under Settings -&gt; General and is the maximum wait that
+will be done for an action before failing. The minimum threshold is the wait that will be done before doing the action call.</dd>
 <dt>Action Description</dt>
 <dd>Description of action. Often auto-generated, but can be set explicitly if needed.</dd>
 <dt>Play Action</dt>
@@ -259,7 +263,7 @@ Below follows an explanation of the fields:</p>
 <dt>Element</dt>
 <dd>This is the DOM tree element that the validation happens</dd>
 <dt>Script</dt>
-<dd>Wensheng. This is a java script that will be executed</dd>
+<dd>Create custom custom conditions in Java script for data values.</dd>
 <dt>Compare</dt>
 <dd>A list of current compare operators. The default is equals (=).</dd>
 <dt>Expectation</dt>
@@ -322,9 +326,9 @@ Below follows an explanation of the fields:</p>
 <p><img src="images/action_extractdata.png" alt="example image" title="An exemplary image" /></p>
 <dl>
 <dt>Method</dt>
-<dd>For the SCRIPT method, it extracts data from the Wensheng</dd>
-<dt>Element</dt>
-<dd>This is the DOM tree element that we are copying the data from</dd>
+<dd>Script let you set variables based on Java script.</dd>
+<dt>Script</dt>
+<dd>Java script to set local variables.</dd>
 <dt>Content</dt>
 <dd>BZ Format, innerHTML, outerHTML, innerText, Attribute, Sub Dom Count, Parent Level. These are described in the Appendix section.</dd>
 <dt>Extract Data</dt>
