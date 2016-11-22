@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Boozang documentation</title>
+        <title>Boozang</title>
 
         <link rel="stylesheet" href="https://ljunggren.github.io/boozang-fo/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://ljunggren.github.io/boozang-fo/css/font-awesome.min.css">
@@ -16,9 +16,9 @@
         <header class="navbar navbar-default navbar-fixed-top">
 
             <a class="navbar-brand" href="https://ljunggren.github.io/boozang-fo/">
-                Boozang documentation
+                Boozang
                 <small class="hidden-xs hidden-sm">
-                    This is the default subtitle!
+                    Functional Overview
                 </small>
             </a>
 
@@ -31,7 +31,7 @@
                 
                 <section id="content" class="col-sm-12">
                     <h1 id="boozang-functional-overview">Boozang Functional Overview</h1>
-<p>In this functional overview document we will go over and explain the different functions of the Boozang test tool.
+<p>In this functional overview document we will explain the different functions of the Boozang test tool.
 This document will be updated as the Boozang test service evolves and an updated copy can always be found on GitHub:
 <a href="https://ljunggren.github.io/boozang-fo/">https://ljunggren.github.io/boozang-fo/</a></p>
 <p>This document is divided into the following sections:</p>
@@ -58,15 +58,42 @@ This document will be updated as the Boozang test service evolves and an updated
 <li><a href="#comment">Comment</a></li>
 <li><a href="#refresh">Refesh</a></li>
 </ul></li>
-<li><a href="#data-handling">Data handling</a></li>
-<li><a href="#appendix-a">Appendix A</a></li>
 </ul>
 <h2 id="the-navigation">The Navigation</h2>
-<p>Testing. The Boozang test tools allows you to organize your project into modules and test cases. The project can contain one or many modules, which in turn contain one or many test cases. A typical example could be: an E-Commerce project such as the Angular Store, would contain modules such as Navigation, Store and
+<p>The Boozang test tools allows you to organize your project into modules and test cases. The project can contain one or many modules, which in turn contain one or many test cases. A typical example could be: an E-Commerce project such as the Angular Store, would contain modules such as Navigation, Store and
 Landing Pages. In Navigation you would find test cases such as Header Navigation, Sidebar Navigation, Main Search, where functionality related to navigation would be found. In Store, you would find test cases for Add Item To Cart, Checkout Items, Clear Cart, etc. Below is a picture of the Boozang navigation bar for the Interactive Tutorial &quot;Angular Store&quot;, where you can see the modules Fruit Interactive Tutorial and Your Space. As the Fruit Interactive Tutorial module has been expanded, we can see the test cases 'Add Random Fruits&quot; and &quot;Fruit Test&quot; inside.</p>
 <p><img src="images/navigation_bar.png" alt="example image" title="An exemplary image" /></p>
 <p>On the top you can see the operations (from left to right): Create New Module, Create New Test, Paste, Cut, and Copy. In the tree structure, the folder
 icons to the left of the module name shows if the module is expanded or not. To the left of the test name the icon shown denotes the test type. The test type can be either cell test, unit test, integration test or bug.</p>
+<p>Here is an explanation of the functions:</p>
+<dl>
+<dt>Create Folder</dt>
+<dd>Creates a folder in the test tree to keep your tests sorted</dd>
+<dt>Create Test</dt>
+<dd>Creates a new test. This creates an empty test which unlocks all test actions</dd>
+<dt>Paste</dt>
+<dd>Pastes an object that has been previously cut/copied</dd>
+<dt>Cut</dt>
+<dd>Cuts an object from the project tree</dd>
+<dt>Copy</dt>
+<dd>Copies an object from the project tree</dd>
+<dt>Delete</dt>
+<dd>Delete an object from the project tree. The object needs to be unlocked in order to be deleted.</dd>
+<dt>Lock</dt>
+<dd>In order to be able to edit a test case or module, it needs to be unlocked in the project tree. This is done with the Edit-operation in
+the Test case view. This is used to prevent multiple users editing the same test case. When other team members are working on something in
+the test tree, it will be shown as a closed lock. </dd>
+<dt>Module Name</dt>
+<dd>The Module name should capture the test functionality, such as Navigation, or match project documentation, such as parts in the requirements specification.</dd>
+<dt>Test name</dt>
+<dd>The Test names should explain what is being tested, or map to another document that does, such as a detailed test case document or requirement specification.</dd>
+<dt>Project Title</dt>
+<dd>The title of the project. This is decided by the project administrator and specified when setting up the project on <a href="https://api.boozang.com">https://api.boozang.com</a></dd>
+<dt>Opened/Closed Module</dt>
+<dd>The folder icon indicates if the module is expanded or not.</dd>
+<dt>Test Type Icon</dt>
+<dd>There are four different types of tests: Bug, Cell test, Unit Test and Integration Test. The icon indicates which.</dd>
+</dl>
 <h2 id="the-function-bar">The Function Bar</h2>
 <p><img src="images/annotated_panel.png" alt="example image" title="An exemplary image" /></p>
 <p>Here is an explanation of the functions:</p>
@@ -383,8 +410,6 @@ chains of tests. </p>
 <h3 id="refresh">Refresh</h3>
 <p>This refreshes the whole page.</p>
 <p><img src="images/action_refresh.png" alt="example image" title="An exemplary image" /></p>
-<h2 id="data-handling">Data handling</h2>
-<h2 id="appendix-a">Appendix A</h2>
                 </section>
 
             </div>
