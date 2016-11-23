@@ -496,7 +496,7 @@ Element
  : This is the DOM tree element that we are executing the script on.
 
 Script
-: This is the java script being executed. To be sure user's code be executed properly, we suggest to put code in a function. The code format like:
+: This is the java script being executed. To be sure user's code be executed properly, we suggest to put code in a function. The code format should be like:
 (function(){
   ......
   return xxx;
