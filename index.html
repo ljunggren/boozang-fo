@@ -240,9 +240,9 @@ being build when doing a validation. This can also be set on each validation act
 <dt>DOM Warning</dt>
 <dd>When highlighted yellow it means the DOM matching policy found several items matching the description. This does not mean it will fail, but that either the source code or the the DOM selection policy should be updated for optimum results.</dd>
 <dt>Action Index</dt>
-<dd>The index number of the action</dd>
+<dd>The index number of the action. Tip: User can double click on it to extend/collpse. In editting model, user can drag/drop to re-order actions in it.</dd>
 <dt>Action Type</dt>
-<dd>The Action Type icon</dd>
+<dd>The Action Type icon. User can click on it to change action type.</dd>
 <dt>Select</dt>
 <dd>An Action selector. Un-check to skip action execution.</dd>
 <dt>Breakpoint</dt>
@@ -251,7 +251,7 @@ being build when doing a validation. This can also be set on each validation act
 <dd>Here a minimum or maximum wait threshold can be set. The maximum threshold overrides the values under Settings -&gt; General and is the maximum wait that
 will be done for an action before failing. The minimum threshold is the wait that will be done before doing the action call.</dd>
 <dt>Action Description</dt>
-<dd>Description of action. Often auto-generated, but can be set explicitly if needed.</dd>
+<dd>Description of action. Often auto-generated, but can be set explicitly if needed. If user wants to change back auto description, just need to clean the description, and Boozang will regenerate title for user.</dd>
 <dt>Play Action</dt>
 <dd>Play Single Action.</dd>
 <dt>Bind Data</dt>
@@ -388,7 +388,11 @@ Below follows an explanation of the fields:</p>
 <dt>Element</dt>
 <dd>This is the DOM tree element that we are executing the script on.</dd>
 <dt>Script</dt>
-<dd>This is the java script being executed</dd>
+<dd>This is the java script being executed. To be sure user's code be executed properly, we suggest to put code in a function. The code format like:
+(function(){
+......
+return xxx;
+})();</dd>
 </dl>
 <h3 id="plug-test-case">Plug test-case</h3>
 <p>This is the Goto functionality of the Boozang tool. This is often done to link together more basic test cases to larger, more complicated
