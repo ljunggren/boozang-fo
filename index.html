@@ -60,63 +60,34 @@ This document will be updated as the Boozang test service evolves and an updated
 </ul></li>
 </ul>
 <h2 id="the-navigation">The Navigation</h2>
-<p>The Boozang test tools allows you to organize your project into modules and test cases. The project can contain one or many modules, which in turn contain one or many test cases. A typical example could be: an E-Commerce project such as the Angular Store, would contain modules such as Navigation, Store and
-Landing Pages. In Navigation you would find test cases such as Header Navigation, Sidebar Navigation, Main Search, where functionality related to navigation would be found. In Store, you would find test cases for Add Item To Cart, Checkout Items, Clear Cart, etc. Below is a picture of the Boozang navigation bar for the Interactive Tutorial &quot;Angular Store&quot;, where you can see the modules Fruit Interactive Tutorial and Your Space. As the Fruit Interactive Tutorial module has been expanded, we can see the test cases 'Add Random Fruits&quot; and &quot;Fruit Test&quot; inside.</p>
+<p>The Boozang test tools allows you to organize your project into modules and test cases. The project can contain one or many modules, which in turn contain one or many test cases and modules. A good analogy for module is directory.
+A typical example could be: an E-Commerce project such as the Angular Store, would contain modules such as Navigation, Store and
+Landing Pages. In Navigation you would find test cases such as Header Navigation, Sidebar Navigation, Main Search, where functionality related to navigation would be found. In Store, you would find test cases for Add Item To Cart, Checkout Items, Clear Cart, etc. Below is a picture of the Boozang navigation bar containing the module &quot;Top Bar Navigation&quot;, the Unit tests &quot;Add All items in Shop&quot;, &quot;Checkout Flow&quot; and &quot;Test Product Filters&quot;, the Cell Tests &quot;Add Item to Cart&quot; and &quot;Clear Cart&quot;, and the Integration test &quot;Customer Demo for Shop&quot;. There different test types are very similar in function, and the difference is mostly for classification purposes. The small blue locks signifies that the tests have been checked out for editing. </p>
 <p><img src="images/navigation_bar.png" alt="example image" title="An exemplary image" /></p>
-<p>On the top you can see the operations (from left to right): Create New Module, Create New Test, Paste, Cut, and Copy. In the tree structure, the folder
-icons to the left of the module name shows if the module is expanded or not. To the left of the test name the icon shown denotes the test type. The test type can be either cell test, unit test, integration test or bug.</p>
+<h2 id="the-toolbar">The Toolbar</h2>
+<p><img src="images/toolbar.png" alt="example image" title="The Toolbar" /></p>
 <p>Here is an explanation of the functions:</p>
 <dl>
-<dt>Create Folder</dt>
-<dd>Creates a folder in the test tree to keep your tests sorted</dd>
-<dt>Create Test</dt>
-<dd>Creates a new test. This creates an empty test which unlocks all test actions</dd>
-<dt>Paste</dt>
-<dd>Pastes an object that has been previously cut/copied</dd>
-<dt>Cut</dt>
-<dd>Cuts an object from the project tree</dd>
-<dt>Copy</dt>
-<dd>Copies an object from the project tree</dd>
-<dt>Delete</dt>
-<dd>Delete an object from the project tree. The object needs to be unlocked in order to be deleted.</dd>
-<dt>Lock</dt>
-<dd>In order to be able to edit a test case or module, it needs to be unlocked in the project tree. This is done with the Edit-operation in
-the Test case view. This is used to prevent multiple users editing the same test case. When other team members are working on something in
-the test tree, it will be shown as a closed lock. </dd>
-<dt>Module Name</dt>
-<dd>The Module name should capture the test functionality, such as Navigation, or match project documentation, such as parts in the requirements specification.</dd>
-<dt>Test name</dt>
-<dd>The Test names should explain what is being tested, or map to another document that does, such as a detailed test case document or requirement specification.</dd>
-<dt>Project Title</dt>
-<dd>The title of the project. This is decided by the project administrator and specified when setting up the project on <a href="https://api.boozang.com">https://api.boozang.com</a></dd>
-<dt>Opened/Closed Module</dt>
-<dd>The folder icon indicates if the module is expanded or not.</dd>
-<dt>Test Type Icon</dt>
-<dd>There are four different types of tests: Bug, Cell test, Unit Test and Integration Test. The icon indicates which.</dd>
-</dl>
-<h2 id="the-function-bar">The Function Bar</h2>
-<p><img src="images/annotated_panel.png" alt="example image" title="An exemplary image" /></p>
-<p>Here is an explanation of the functions:</p>
-<dl>
-<dt>Create Folder</dt>
-<dd>Creates a folder in the test tree to keep your tests sorted</dd>
-<dt>Create Test</dt>
-<dd>Creates a new test. This creates an empty test which unlocks all test actions</dd>
+<dt>Navigate</dt>
+<dd>Allows you to navigate the project structure to select a test</dd>
+<dt>Databind</dt>
+<dd>Todo</dd>
 <dt>Record</dt>
 <dd>Records actions into the tests by registering events in the browser. The events being registered can be set in Settings (in hamburger menu)</dd>
 <dt>Play</dt>
 <dd>Runs the test</dd>
 <dt>Step</dt>
 <dd>Runs the test one step at a time</dd>
-<dt>Stop</dt>
-<dd>Stops current test run</dd>
+<dt>Comment</dt>
+<dd>Creates a comment text box in the page. Useful to point out bugs and discrepancies</dd>
 <dt>Validate</dt>
 <dd>Creates a validation, or in test language, assertion in the page</dd>
 <dt>Comment</dt>
-<dd>Creates a comment text box in the page. Useful to point out bugs and discrepancies
-9. Fill Form: Fills out form and enables binding into JSON data structures
-10. Cancel/Unlock: Reloads test from server. Local changes will be lost and lock removed
-11. Save: Saves to server database. In order to release lock follow with cancel</dd>
+<dd>Creates a comment text box in the page. Useful to point out bugs and discrepancies</dd>
+<dt>Fill Form</dt>
+<dd>Fills out form and enables binding into JSON data structures</dd>
+<dt>Save</dt>
+<dd>Saves to server database. In order to release lock follow with cancel</dd>
 </dl>
 <h2 id="settings">Settings</h2>
 <p>The Settings panel can be found in the Hamburger menu in the top right corner. The Settings are divided into tabs: General, Recording Events, Dom Strategy,
@@ -210,7 +181,10 @@ being build when doing a validation. This can also be set on each validation act
 <p><img src="images/settings_service.png" alt="example image" title="An exemplary image" /></p>
 <h2 id="test-view">Test View</h2>
 <p>The main test view is shown as soon as a test is selected in the left-hand tree navigation.</p>
-<p><img src="images/test_view.png" alt="example image" title="An exemplary image" /></p>
+<p><img src="images/test_details_general.png" alt="example image" title="An exemplary image" /></p>
+<p><img src="images/test_details_actions.png" alt="example image" title="An exemplary image" /></p>
+<p><img src="images/test_details_data.png" alt="example image" title="An exemplary image" /></p>
+<p><img src="images/test_details_setup.png" alt="example image" title="An exemplary image" /></p>
 <p>Here is an explanation of the different functions</p>
 <dl>
 <dt>Record</dt>
