@@ -171,108 +171,21 @@
 
                 
                 <section class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
-                    <h1 id="boozang">Boozang</h1>
-<p>In this functional overview document we will explain the different functions of the Boozang test tool.
-This document will be updated as the Boozang test service evolves and an updated copy can always be found on GitHub:
-<a href="https://ljunggren.github.io/boozang-fo/">https://ljunggren.github.io/boozang-fo/</a></p>
-<p>This document is divided into the following sections:</p>
-<ul>
-<li>[Why Boozang?]</li>
-<li>[Key Differences]</li>
-<li>[Getting Started]
-<ul>
-<li>[Installing Boozang]</li>
-<li>[Recording your first test]</li>
-<li>[The Boozang fragment]</li>
-<li>[Running from command line]</li>
-</ul></li>
-<li><a href="#the-navigation">The Navigation</a></li>
-<li><a href="#the-function-bar">The Function Bar</a></li>
-<li><a href="#settings">Settings</a>
-<ul>
-<li><a href="#general">General</a></li>
-<li><a href="#recording-events">Recording Events</a></li>
-<li><a href="#dom-strategy">DOM Strategy</a> </li>
-<li><a href="#validation-ignore">Validation Ignore</a></li>
-<li><a href="#subscription">Subscription</a></li>
-<li><a href="#service">Service</a></li>
-</ul></li>
-<li><a href="#test-view">Test View</a></li>
-<li><a href="#actions">Actions</a>
-<ul>
-<li><a href="#validate">Validate</a></li>
-<li><a href="#trigger-event">Trigger Event</a></li>
-<li><a href="#extract-data">Extract Data</a> </li>
-<li><a href="#js-code">JS Code</a></li>
-<li><a href="#plug-test-case">Plug Test-case</a></li>
-<li><a href="#comment">Comment</a></li>
-<li><a href="#refresh">Refesh</a></li>
-</ul></li>
-</ul>
-<h2 id="the-navigation">The Navigation</h2>
-<p>The Boozang test tools allows you to organize your project into modules and test cases. The project can contain one or many modules, which in turn contain one or many test cases. A typical example could be: an E-Commerce project such as the Angular Store, would contain modules such as Navigation, Store and
-Landing Pages. In Navigation you would find test cases such as Header Navigation, Sidebar Navigation, Main Search, where functionality related to navigation would be found. In Store, you would find test cases for Add Item To Cart, Checkout Items, Clear Cart, etc. Below is a picture of the Boozang navigation bar for the Interactive Tutorial &quot;Angular Store&quot;, where you can see the modules Fruit Interactive Tutorial and Your Space. As the Fruit Interactive Tutorial module has been expanded, we can see the test cases 'Add Random Fruits&quot; and &quot;Fruit Test&quot; inside.</p>
-<p><img src="images/navigation_bar.png" alt="example image" title="An exemplary image" /></p>
-<p>On the top you can see the operations (from left to right): Create New Module, Create New Test, Paste, Cut, and Copy. In the tree structure, the folder
-icons to the left of the module name shows if the module is expanded or not. To the left of the test name the icon shown denotes the test type. The test type can be either cell test, unit test, integration test or bug.</p>
-<p>Here is an explanation of the functions:</p>
-<dl>
-<dt>Create Folder</dt>
-<dd>Creates a folder in the test tree to keep your tests sorted</dd>
-<dt>Create Test</dt>
-<dd>Creates a new test. This creates an empty test which unlocks all test actions</dd>
-<dt>Paste</dt>
-<dd>Pastes an object that has been previously cut/copied</dd>
-<dt>Cut</dt>
-<dd>Cuts an object from the project tree</dd>
-<dt>Copy</dt>
-<dd>Copies an object from the project tree</dd>
-<dt>Delete</dt>
-<dd>Delete an object from the project tree. The object needs to be unlocked in order to be deleted.</dd>
-<dt>Lock</dt>
-<dd>In order to be able to edit a test case or module, it needs to be unlocked in the project tree. This is done with the Edit-operation in
-the Test case view. This is used to prevent multiple users editing the same test case. When other team members are working on something in
-the test tree, it will be shown as a closed lock. </dd>
-<dt>Module Name</dt>
-<dd>The Module name should capture the test functionality, such as Navigation, or match project documentation, such as parts in the requirements specification.</dd>
-<dt>Test name</dt>
-<dd>The Test names should explain what is being tested, or map to another document that does, such as a detailed test case document or requirement specification.</dd>
-<dt>Project Title</dt>
-<dd>The title of the project. This is decided by the project administrator and specified when setting up the project on <a href="https://api.boozang.com">https://api.boozang.com</a></dd>
-<dt>Opened/Closed Module</dt>
-<dd>The folder icon indicates if the module is expanded or not.</dd>
-<dt>Test Type Icon</dt>
-<dd>There are four different types of tests: Bug, Cell test, Unit Test and Integration Test. The icon indicates which.</dd>
-</dl>
-<h2 id="the-function-bar">The Function Bar</h2>
-<p><img src="images/annotated_panel.png" alt="example image" title="An exemplary image" /></p>
-<p>Here is an explanation of the functions:</p>
-<dl>
-<dt>Create Folder</dt>
-<dd>Creates a folder in the test tree to keep your tests sorted</dd>
-<dt>Create Test</dt>
-<dd>Creates a new test. This creates an empty test which unlocks all test actions</dd>
-<dt>Record</dt>
-<dd>Records actions into the tests by registering events in the browser. The events being registered can be set in Settings (in hamburger menu)</dd>
-<dt>Play</dt>
-<dd>Runs the test</dd>
-<dt>Step</dt>
-<dd>Runs the test one step at a time</dd>
-<dt>Stop</dt>
-<dd>Stops current test run</dd>
-<dt>Validate</dt>
-<dd>Creates a validation, or in test language, assertion in the page</dd>
-<dt>Comment</dt>
-<dd>Creates a comment text box in the page. Useful to point out bugs and discrepancies
-9. Fill Form: Fills out form and enables binding into JSON data structures
-10. Cancel/Unlock: Reloads test from server. Local changes will be lost and lock removed
-11. Save: Saves to server database. In order to release lock follow with cancel</dd>
-</dl>
-<h2 id="settings">Settings</h2>
-<p>The Settings panel can be found in the Hamburger menu in the top right corner. The Settings are divided into tabs: General, Recording Events, Dom Strategy,
-Validation Ignore, Subscription, Service. As soon as you update any settings in needs to be Saved to take effect. This will affect your user only,
-and will persist between sessions for your user. If it's desired to change a setting for the whole project, use Save As Default. This change will be set
-on the project level and will affect all new sessions for other users. Note: Save As Default require Modify-privileges on the Project-level.</p>
+                    <h1 id="why-boozang">Why Boozang?</h1>
+<h2 id="stable-to-code-changes">Stable to code changes</h2>
+<p>Boozang is fundamentally different from other test tools. Boozang using natural language to identify browser elements, instead of the DOM elements, making tests incredibly stable to technological changes. Actually, it´s possible to completely change the underlying technology without affecting the tests. You can go from a Java legacy application to Angular and the tests remains the same, as long as the business requirments does. </p>
+<h2 id="automated-documentation">Automated documentation</h2>
+<p>As Boozang is completely based on natural language, all recorded tests are also a user manual. When a label changes, such as &quot;Create Project&quot; being changed to &quot;Add Project&quot;, the test will need to be updated accordingly. This means all test documntation is always up-to-date.</p>
+<h2 id="bdd--tdd">BDD / TDD</h2>
+<p>Boozang is built for Test-driven and Behavior-driven development minus the programming effort. Start writing tests directly from requirements. The Boozang AI engine will automatically build tests from your documented test steps. No need to spend time to maintain a test middleware layer.</p>
+<h2 id="linkability">Linkability</h2>
+<p>Boozang is completely built in Javascript and being CLoud-based there is no need for any client-side installation. Simply add a html-fragment to your site to activate it for testing.</p>
+<h2 id="cross-browser">Cross-browser</h2>
+<p>As Boozang doesn't rely on browser extensions or client-side install, it natively runs in any web browser (Chrome, Firefox, Safari, Opera). </p>
+<h2 id="device-agnostic">Device agnostic</h2>
+<p>Boozang runs on any device that has a web browser. </p>
+<h2 id="comparison">Comparison</h2>
+<p>Check out our feature comparison grid here to see how we compare to established test tools here.</p>
 <h3 id="general">General</h3>
 <p><img src="images/settings_general.png" alt="example image" title="An exemplary image" /></p>
 <p>The General Settings tab allows the user to control basic test functionality and look &amp; feel. Explanation of functions from top to bottom</p>
