@@ -181,133 +181,17 @@
 
                 
                 <section class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
-                    <h1 id="an-h1-header">An h1 header</h1>
-<p>Paragraphs are separated by a blank line.</p>
-<p>2nd paragraph. <em>Italic</em>, <strong>bold</strong>, and <code>monospace</code>. Itemized lists
-look like:</p>
-<ul>
-<li>this one</li>
-<li>that one</li>
-<li>the other one</li>
-</ul>
-<p>Note that --- not considering the asterisk --- the actual text
-content starts at 4-columns in.</p>
-<blockquote>
-<p>Block quotes are
-written like so.</p>
-<p>They can span multiple paragraphs,
-if you like.</p>
-</blockquote>
-<p>Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., &quot;it's all
-in chapters 12--14&quot;). Three dots ... will be converted to an ellipsis.
-Unicode is supported. ☺</p>
-<h2 id="an-h2-header">An h2 header</h2>
-<p>Here's a numbered list:</p>
-<ol>
-<li>first item</li>
-<li>second item</li>
-<li>third item</li>
-</ol>
-<p>Note again how the actual text starts at 4 columns in (4 characters
-from the left side). Here's a code sample:</p>
-<pre><code># Let me re-iterate ...
-for i in 1 .. 10 { do-something(i) }</code></pre>
-<p>As you probably guessed, indented 4 spaces. By the way, instead of
-indenting the block, you can use delimited blocks, if you like:</p>
-<pre><code>define foobar() {
-    print "Welcome to flavor country!";
-}</code></pre>
-<p>(which makes copying &amp; pasting easier). You can optionally mark the
-delimited block for Pandoc to syntax highlight it:</p>
-<pre><code class="language-python">import time
-# Quick, count to ten!
-for i in range(10):
-    # (but not *too* quick)
-    time.sleep(0.5)
-    print i</code></pre>
-<h3 id="an-h3-header">An h3 header</h3>
-<p>Now a nested list:</p>
-<ol>
-<li>
-<p>First, get these ingredients:</p>
-<ul>
-<li>carrots</li>
-<li>celery</li>
-<li>lentils</li>
-</ul>
-</li>
-<li>
-<p>Boil some water.</p>
-</li>
-<li>
-<p>Dump everything in the pot and follow
-this algorithm:</p>
-<pre><code>find wooden spoon
-uncover pot
-stir
-cover pot
-balance wooden spoon precariously on pot handle
-wait 10 minutes
-goto first step (or shut off burner when done)</code></pre>
-<p>Do not bump wooden spoon or it will fall.</p>
-</li>
-</ol>
-<p>Notice again how text always lines up on 4-space indents (including
-that last line which continues item 3 above).</p>
-<p>Here's a link to <a href="http://foo.bar">a website</a>, to a <a href="local-doc.html">local
-doc</a>, and to a <a href="#an-h2-header">section heading in the current
-doc</a>. Here's a footnote <sup id="fnref1:1"><a href="#fn:1" class="footnote-ref">2</a></sup>.</p>
-<p>Tables can look like this:</p>
-<p>size  material      color</p>
-<hr />
-<p>9     leather       brown
-10    hemp canvas   natural
-11    glass         transparent</p>
-<p>Table: Shoes, their sizes, and what they're made of</p>
-<p>(The above is the caption for the table.) Pandoc also supports
-multi-line tables:</p>
-<hr />
-<p>keyword   text</p>
-<hr />
-<p>red       Sunsets, apples, and
-other red or reddish
-things.</p>
-<p>green     Leaves, grass, frogs
-and other things it's
-not easy being.</p>
-<hr />
-<p>A horizontal rule follows.</p>
-<hr />
-<p>Here's a definition list:</p>
-<dl>
-<dt>apples</dt>
-<dd>Good for making applesauce.
-oranges</dd>
-<dd>Citrus!
-tomatoes</dd>
-<dd>There's no &quot;e&quot; in tomatoe.</dd>
-</dl>
-<p>Again, text is indented 4 spaces. (Put a blank line between each
-term/definition pair to spread things out more.)</p>
-<p>Here's a &quot;line block&quot;:</p>
-<p>| Line one
-|   Line too
-| Line tree</p>
-<p>and images can be specified like so:</p>
-<p><img src="example-image.jpg" alt="example image" title="An exemplary image" /></p>
-<p>Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:</p>
-<p>$$I = \int \rho R^{2} dV$$</p>
-<p>And note that you can backslash-escape any punctuation characters
-which you wish to be displayed literally, ex.: `foo`, *bar*, etc.</p>
-<div class="footnotes">
-<hr />
-<ol>
-<li id="fn:1">
-<p>Footnote text goes here.&#160;<a href="#fnref1:1" rev="footnote" class="footnote-backref">&#8617;</a></p>
-</li>
-</ol>
-</div>
+                    <h1 id="writing-your-first-test">Writing your first test</h1>
+<h2 id="why-write-tests">Why write tests?</h2>
+<p>Boozang allows you to write tests in natural language. This might seem more cumbersome than recording a test, but is very useful for test-driven or behavior-driven development, where you write the tests before the actual application code. It's also useful to allow non-technical people to be able to write tests. </p>
+<h2 id="the-boozang-test-syntax">The Boozang test syntax</h2>
+<p>The Boozang syntax aims to be as close to natural language as possible. The syntax comprises of an action keyword and a target element. The best way of getting started is simply recording a set of actions in your application and converting them to test instructions, and simply following suit. The full Boozang synatx reference can be found here (insert link here). </p>
+<h2 id="running-a-test">Running a test</h2>
+<p>To run a test instruction the Boozang syntax needs to be converted to test ations. In order to do this you simply click the magic wand inside the tool, and choose &quot;Generate actions based on descriptions&quot;. This will automatically convert each test instruction into an action and run the action. By running each action the Boozang tool is always workig on the &quot;current&quot; state of the application so it's able to do more accurate interpretations of the Boozang syntax. This approach is vastly superior to stateless key-word driven test tools that has no information of the state of the application, which means the syntax will be very unforgiving to mistakes. </p>
+<h2 id="generating-test-instructions">Generating test instructions</h2>
+<p>Boozang also allows for automatic generation of test instructions. After a test has been recorded simply click on the magic wand and choose &quot;Generate test instructions from actions&quot; and the instructions will be generated. </p>
+<h2 id="updating-your-code">Updating your code</h2>
+<p>After you have recorded a set of actions these are linked to the application code. As Boozang is based on natural language the tests are often very resilient to code updates. In the case where a code update is breaking a test, it could be worth autogenerate the test from the test syntax. Simply click on the magic wand to generate the test instructions and again to re-generate the actions and the test will be re-built based on your source code. </p>
                 </section>
 
             </div>
