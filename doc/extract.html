@@ -196,21 +196,14 @@
 
                 
                 <section class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
-                    <h1 id="why-boozang">Why Boozang?</h1>
-<h2 id="stable-to-code-changes">Stable to code changes</h2>
-<p>Boozang is fundamentally different from other test tools. Boozang using natural language to identify browser elements, instead of the DOM elements, making tests incredibly stable to changes of the underlying implementation. Actually, it´s possible to completely change the underlying technology without affecting the tests. You can go from a Java legacy application to Angular and the tests remains the same, as long as the business requirments does. </p>
-<h2 id="automated-documentation">Automated documentation</h2>
-<p>As Boozang is completely based on natural language, all recorded tests are also a user manual. When a label changes, such as &quot;Create Project&quot; being changed to &quot;Add Project&quot;, the test will need to be updated accordingly. This means all test documntation is always up-to-date.</p>
-<h2 id="bdd--tdd">BDD / TDD</h2>
-<p>Boozang is built for Test-driven and Behavior-driven development minus the programming effort. Start writing tests directly from requirements. The Boozang AI engine will automatically build tests from your documented test steps. No need to spend time to maintain a test middleware layer.</p>
-<h2 id="linkability">Linkability</h2>
-<p>Boozang is completely built in Javascript and being CLoud-based there is no need for any client-side installation. Simply add a html-fragment to your site to activate it for testing.</p>
-<h2 id="cross-browser">Cross-browser</h2>
-<p>As Boozang doesn't rely on browser extensions or client-side install, it natively runs in any web browser (Chrome, Firefox, Safari, Opera). </p>
-<h2 id="device-agnostic">Device agnostic</h2>
-<p>Boozang runs on any device that has a web browser. </p>
-<h2 id="comparison">Comparison</h2>
-<p>Check out our feature comparison grid here to see how we compare to established test tools here.</p>
+                    <h1 id="extracting-data">Extracting data</h1>
+<p>Note: For API versions of these actions check the API section. </p>
+<h2 id="similarities-with-validation">Similarities with Validation</h2>
+<p>With Boozang it´s possible to extract data from the application window. This is very similar to the Validation action, with the difference that the element extracted is copied into a data variable. Make sure to familiarize yourself with the Validation action before reading this section. </p>
+<h2 id="introducing-data">Introducing data</h2>
+<p>Start by defining a data variable in the data tab. For extraction you typically want to use a property. The property can be defined on project, module and test level. Add it on test level if the data will only be used in the test case. Add it on module elvel if the data will be used across different tests in the module, but not on different modules. Add it on project level if it will be used globally. </p>
+<h2 id="extracting-data-action">Extracting data action</h2>
+<p>To add an extract data action, simply click on the Plus icon and select Extract data, then click on an element in the application window you want to extract. </p>
                 </section>
 
             </div>

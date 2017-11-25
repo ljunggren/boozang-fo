@@ -79,7 +79,7 @@
                                     </li>
                                                             </ul>
                                                     <p class="text-muted">
-                                Functions
+                                Function Overview
                             </p>
 
                             <ul class="nav nav-pills nav-stacked">
@@ -89,8 +89,23 @@
                                         </a>
                                     </li>
                                                                     <li class="">
-                                        <a href="https://ljunggren.github.io/boozang-fo/doc/why.html">
+                                        <a href="https://ljunggren.github.io/boozang-fo/doc/validation.html">
                                             Validation
+                                        </a>
+                                    </li>
+                                                                    <li class="">
+                                        <a href="https://ljunggren.github.io/boozang-fo/doc/comment.html">
+                                            Comments
+                                        </a>
+                                    </li>
+                                                                    <li class="">
+                                        <a href="https://ljunggren.github.io/boozang-fo/doc/extract.html">
+                                            Extract data
+                                        </a>
+                                    </li>
+                                                                    <li class="">
+                                        <a href="https://ljunggren.github.io/boozang-fo/doc/javascript.html">
+                                            Java script
                                         </a>
                                     </li>
                                                             </ul>
@@ -181,28 +196,13 @@
 
                 
                 <section class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
-                    <h1 id="installation">Installation</h1>
-<h2 id="installation-options">Installation Options</h2>
-<p>Boozang is completely hosted in the Cloud so there is no need for a client-side installation. Simply create a project and download the bz.html snippet and put it into your web application root. For users who do not have access to the application root we also provide a Chrome browser extension. This extension also allows for cross-domain testing which the html-snippet technology does not allow.</p>
-<h2 id="html-snippet">HTML snippet</h2>
-<p>The html snippet technology is completely secure as it´s reliant on the built-in security of the HTTP protocol. Simply create a proejct at <a href="http://ai.boozang.com">http://ai.boozang.com</a> and download the html snippet. The snippet is copied to the web root (where your index.html or similar would be located). In order to launch the Boozang tool, simply access the snippet in any browser, such as <a href="http://myapplication.com/bz.html">http://myapplication.com/bz.html</a> or <a href="http://localhost:8080/bz.html">http://localhost:8080/bz.html</a>. </p>
-<h2 id="chrome-extension">Chrome extension</h2>
-<p>For users without access to the application web root, or for users who wants to do cross-domain testing, we also provide a Chrome extension. The Chrome extension can be downloaded from the Chrome web store here: <a href="https://chrome.google.com/webstore/detail/boozang/feijjbehfljebjillfefcehfmlolcomf">https://chrome.google.com/webstore/detail/boozang/feijjbehfljebjillfefcehfmlolcomf</a></p>
-<h2 id="user-credentials">User credentials</h2>
-<p>In a secure environment you can add your user credentials to the bz-fragment to avoid entering user credentials. One way to do it is to create a personalized copy of your bz-fragment</p>
-<pre><code class="language-yaml">cd webroot
-cp bz.html bz-mats.html</code></pre>
-<p>and adding the user credentials the following way</p>
-<pre><code class="language-yaml">&lt;DOCTYPE html&gt;&lt;script type='text/javascript' src='//localhost:8000/ide?id=5a0478cd4f69270984c529a3'&gt;&lt;/script&gt;
-&lt;script&gt;
-username="email@domain.com";
-password="password";
-&lt;/script&gt;</code></pre>
-<h2 id="npm-package-for-ci-integration">Npm package for CI integration</h2>
-<p>We also provide a npm package based on the excellent Headless Chrome Node API  Puppeteer, provided by Google developers (<a href="https://github.com/GoogleChrome/puppeteer">https://github.com/GoogleChrome/puppeteer</a>). Install Node v8 or later and run </p>
-<pre><code class="language-yaml">npm install boozang</code></pre>
-<p>This will automatically download a Chromium version compatible with your system that allows for headless execution. You can run any tests by specifying the URL of the test </p>
-<pre><code class="language-yaml">boozang http://myapplication.com/bz.html#ost</code></pre>
+                    <h1 id="the-help-function">The Help function</h1>
+<h2 id="saas-and-new-features">SaaS and new features</h2>
+<p>As Boozang is completely hosted in the Cloud it´s easy to do changes and add useful features quickly. This has a huge upside as we are able to deploy features that customer asks for to all our customers at the same time, to the benefit of all. This also means that new things can appear in the user interface without warning, and in some cases, that the documentation might not be up-to-date all the time. </p>
+<h2 id="in-tool-help">In-tool help</h2>
+<p>For this reason, to be able to deliver new features fast without forcing the end user to re-learn, we added an online help function inside the tool. Simply click the question mark in the user interface, and click the functionality and an explanation will appear. </p>
+<h2 id="videos">Videos</h2>
+<p>In the help text you will find an explanation of the function you selected. You will also find any related videos to that function, if available. When clicking a video link, a separate video window will appear and you will be able to follow along in the tool if needed. </p>
                 </section>
 
             </div>

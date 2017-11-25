@@ -196,21 +196,13 @@
 
                 
                 <section class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
-                    <h1 id="why-boozang">Why Boozang?</h1>
-<h2 id="stable-to-code-changes">Stable to code changes</h2>
-<p>Boozang is fundamentally different from other test tools. Boozang using natural language to identify browser elements, instead of the DOM elements, making tests incredibly stable to changes of the underlying implementation. Actually, it´s possible to completely change the underlying technology without affecting the tests. You can go from a Java legacy application to Angular and the tests remains the same, as long as the business requirments does. </p>
-<h2 id="automated-documentation">Automated documentation</h2>
-<p>As Boozang is completely based on natural language, all recorded tests are also a user manual. When a label changes, such as &quot;Create Project&quot; being changed to &quot;Add Project&quot;, the test will need to be updated accordingly. This means all test documntation is always up-to-date.</p>
-<h2 id="bdd--tdd">BDD / TDD</h2>
-<p>Boozang is built for Test-driven and Behavior-driven development minus the programming effort. Start writing tests directly from requirements. The Boozang AI engine will automatically build tests from your documented test steps. No need to spend time to maintain a test middleware layer.</p>
-<h2 id="linkability">Linkability</h2>
-<p>Boozang is completely built in Javascript and being CLoud-based there is no need for any client-side installation. Simply add a html-fragment to your site to activate it for testing.</p>
-<h2 id="cross-browser">Cross-browser</h2>
-<p>As Boozang doesn't rely on browser extensions or client-side install, it natively runs in any web browser (Chrome, Firefox, Safari, Opera). </p>
-<h2 id="device-agnostic">Device agnostic</h2>
-<p>Boozang runs on any device that has a web browser. </p>
-<h2 id="comparison">Comparison</h2>
-<p>Check out our feature comparison grid here to see how we compare to established test tools here.</p>
+                    <h1 id="adding-comments">Adding comments</h1>
+<h2 id="why-comment">Why comment?</h2>
+<p>In a lot of cases there are errors that can only be spotted by human, such as look &amp; feel bugs or poor choice of language. In this case it´s very useful to be able to point this out and have a simple way for a team member on the receiving side being able to correct this. For these cases we use the Comment action. </p>
+<h2 id="the-comment-action">The Comment action</h2>
+<p>The comment actions adds a comment, or annotation, to the application. In order to add a Comment, simply click on the Plus icon and select Add Comment, and select the element in the application page to Comment. You can write directly into the Comment dialog on the application.</p>
+<h2 id="running-a-test-with-comments">Running a test with comments</h2>
+<p>When running a test with comments, the test will execute and stop at the first comment. In order to go to the next comment, simply press play again and the test will continue executing until it finishes or hits the next comment. This is very useful when fixing look &amp; feel issues, as several issues can be recorded in the same test case. </p>
                 </section>
 
             </div>

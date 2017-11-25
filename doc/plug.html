@@ -196,21 +196,13 @@
 
                 
                 <section class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
-                    <h1 id="why-boozang">Why Boozang?</h1>
-<h2 id="stable-to-code-changes">Stable to code changes</h2>
-<p>Boozang is fundamentally different from other test tools. Boozang using natural language to identify browser elements, instead of the DOM elements, making tests incredibly stable to changes of the underlying implementation. Actually, it´s possible to completely change the underlying technology without affecting the tests. You can go from a Java legacy application to Angular and the tests remains the same, as long as the business requirments does. </p>
-<h2 id="automated-documentation">Automated documentation</h2>
-<p>As Boozang is completely based on natural language, all recorded tests are also a user manual. When a label changes, such as &quot;Create Project&quot; being changed to &quot;Add Project&quot;, the test will need to be updated accordingly. This means all test documntation is always up-to-date.</p>
-<h2 id="bdd--tdd">BDD / TDD</h2>
-<p>Boozang is built for Test-driven and Behavior-driven development minus the programming effort. Start writing tests directly from requirements. The Boozang AI engine will automatically build tests from your documented test steps. No need to spend time to maintain a test middleware layer.</p>
-<h2 id="linkability">Linkability</h2>
-<p>Boozang is completely built in Javascript and being CLoud-based there is no need for any client-side installation. Simply add a html-fragment to your site to activate it for testing.</p>
-<h2 id="cross-browser">Cross-browser</h2>
-<p>As Boozang doesn't rely on browser extensions or client-side install, it natively runs in any web browser (Chrome, Firefox, Safari, Opera). </p>
-<h2 id="device-agnostic">Device agnostic</h2>
-<p>Boozang runs on any device that has a web browser. </p>
-<h2 id="comparison">Comparison</h2>
-<p>Check out our feature comparison grid here to see how we compare to established test tools here.</p>
+                    <h1 id="connecting-tests-together">Connecting tests together</h1>
+<h2 id="plug-test-case-action">Plug test-case action</h2>
+<p>In order to connect tests together you can use Plug-test case functionality. Simply use the Plus button to plug in a test case into your current test case. You can select the test case from the menu that appears. After a referenced test has been executed, it will continue execution of consequtive actions. </p>
+<h2 id="creating-a-test-suite">Creating a test suite</h2>
+<p>In Boozang a test suite is simply another test case. Simply use Plug test-case to select the sequence of tests to be executed. </p>
+<h2 id="conditional-tests">Conditional Tests</h2>
+<p>Sometime it´s useful to execute a test if certain conditions are met. One example is to run the login test case when the login button is shown, otherwise the user is assumed to be already logged in. In order to do this, add a validation exists condition on the Login button. In the action details, under Advanced, add On Success -&gt; Goto Test Case and select the test case you want executed (in this case Login). </p>
                 </section>
 
             </div>

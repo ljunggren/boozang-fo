@@ -79,7 +79,7 @@
                                     </li>
                                                             </ul>
                                                     <p class="text-muted">
-                                Functions
+                                Function Overview
                             </p>
 
                             <ul class="nav nav-pills nav-stacked">
@@ -89,8 +89,23 @@
                                         </a>
                                     </li>
                                                                     <li class="">
-                                        <a href="https://ljunggren.github.io/boozang-fo/doc/why.html">
+                                        <a href="https://ljunggren.github.io/boozang-fo/doc/validation.html">
                                             Validation
+                                        </a>
+                                    </li>
+                                                                    <li class="">
+                                        <a href="https://ljunggren.github.io/boozang-fo/doc/comment.html">
+                                            Comments
+                                        </a>
+                                    </li>
+                                                                    <li class="">
+                                        <a href="https://ljunggren.github.io/boozang-fo/doc/extract.html">
+                                            Extract data
+                                        </a>
+                                    </li>
+                                                                    <li class="">
+                                        <a href="https://ljunggren.github.io/boozang-fo/doc/javascript.html">
+                                            Java script
                                         </a>
                                     </li>
                                                             </ul>
@@ -187,11 +202,17 @@
 <p><img src="images/settings_general.png" alt="example image" title="An exemplary image" /></p>
 <p>This allows you to get a good overview of the recorded actions, and an easy way to modify or delete recorded actions.</p>
 <h2 id="the-boozang-recorder">The Boozang recorder</h2>
-<p>Boozang works within the browser which allows for a very stable recording function. Simply click on the record button in the tool. As you perfrom actions on your web page actions will be recorded. To remove an un-wanted action that was recorded simply press the trashbin next to the action in the main tool view.  </p>
+<p>Boozang works within the browser which allows for a very stable recording function. Simply click on the record button in the tool. As you perfrom actions on your web page actions will be recorded. To remove an un-wanted action that was recorded simply press the trashbin next to the action in the main tool view. </p>
+<h2 id="test-playback">Test playback</h2>
+<p>As soon as a test has been created you can use the playback button to replay the test steps. Boozang supports 3 different playback modes: Normal, demo and debug mode. Demo mode slows down the playback speed and annotates every test step. This is good for demos and when trying to understand a test that someone else has authored. Debug mode is a very powerful functionality that plays the test, but when encountering an error it highlight the error and allows you to correct it on the fly. When you have corrected the error simple press the play button again and the test will continue it´s execution. This is very useful when updating a test after a big code change. </p>
+<h2 id="saving-a-test">Saving a test</h2>
+<p>A test is automatically saved in the local storage of the browser. As soon as you update a test, the test will be checked out by you, and it will appear as locked for your team-mates, which prevents them from making changes. As soon as you click save the test will be saved on the Boozang server, and the lock will be automatically removed, allowing other team-members to make changes. </p>
 <h2 id="creating-a-validation">Creating a validation</h2>
 <p>It's also very easy to create a validation, or assertion. Simply click on the validation button and click the element you want to validate in your application. The default validation condition is &quot;exists&quot;, that creates an assertion equals condition on the element. You can change the validation condition can be changed in the main tool window. </p>
 <h2 id="generate-test-instruction">Generate test instruction</h2>
-<p>Based on your recorded test you can also generate the test steps in clear text format, in our Boozang syntax. Simply click on the magic wand and the test instructions will be generated automatically. </p>
+<p>Based on your recorded test you can also generate the test steps in clear text format, in our Boozang syntax. Simply click on the magic wand, select &quot;From Actions to generate test case description&quot; and the test instructions will be generated automatically. </p>
+<h2 id="playback-test-instruction">Playback test instruction</h2>
+<p>In order to playback the test based on the test instruction you will again use the magic wand. Click on &quot;From test case description to generate actions&quot; and the test case will run, automatically generating test actions. </p>
                 </section>
 
             </div>

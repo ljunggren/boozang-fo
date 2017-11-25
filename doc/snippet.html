@@ -196,21 +196,34 @@
 
                 
                 <section class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
-                    <h1 id="why-boozang">Why Boozang?</h1>
-<h2 id="stable-to-code-changes">Stable to code changes</h2>
-<p>Boozang is fundamentally different from other test tools. Boozang using natural language to identify browser elements, instead of the DOM elements, making tests incredibly stable to changes of the underlying implementation. Actually, it´s possible to completely change the underlying technology without affecting the tests. You can go from a Java legacy application to Angular and the tests remains the same, as long as the business requirments does. </p>
-<h2 id="automated-documentation">Automated documentation</h2>
-<p>As Boozang is completely based on natural language, all recorded tests are also a user manual. When a label changes, such as &quot;Create Project&quot; being changed to &quot;Add Project&quot;, the test will need to be updated accordingly. This means all test documntation is always up-to-date.</p>
-<h2 id="bdd--tdd">BDD / TDD</h2>
-<p>Boozang is built for Test-driven and Behavior-driven development minus the programming effort. Start writing tests directly from requirements. The Boozang AI engine will automatically build tests from your documented test steps. No need to spend time to maintain a test middleware layer.</p>
-<h2 id="linkability">Linkability</h2>
-<p>Boozang is completely built in Javascript and being CLoud-based there is no need for any client-side installation. Simply add a html-fragment to your site to activate it for testing.</p>
-<h2 id="cross-browser">Cross-browser</h2>
-<p>As Boozang doesn't rely on browser extensions or client-side install, it natively runs in any web browser (Chrome, Firefox, Safari, Opera). </p>
-<h2 id="device-agnostic">Device agnostic</h2>
-<p>Boozang runs on any device that has a web browser. </p>
-<h2 id="comparison">Comparison</h2>
-<p>Check out our feature comparison grid here to see how we compare to established test tools here.</p>
+                    <h1 id="the-bz-snippet">The BZ snippet</h1>
+<h2 id="run-boozang-without-installation">Run Boozang without installation</h2>
+<p>The Boozang html snippet allows you to run the Boozang tool completely without a client-side installation, or browser extension. </p>
+<h2 id="installation">Installation</h2>
+<p>To install the Boozang snippet first download it to your server. That can be done from the management UI at ai.boozang.com. The snippet is unique for every single project, so make sure not to get them mixed up. To activate your application for testing simply copy it to your application root. </p>
+<h2 id="renaming-the-fragment">Renaming the fragment</h2>
+<p>The fragment is called bz.html by default but can be renamed to anything. Sometimes you want to isolate different environments from each other for user access policy reason, but still have them in the same directory in your vrsioning system. In that case, you can name them bz-dev.html, bz-staging.html and bz-production.html. </p>
+<h2 id="locating-your-application-root">Locating your application root</h2>
+<p>Different applications have different application roots. In a standard html application it will be where the index.html is located. In a standard Angular application it will be where the html files are published, like the public/ directory. </p>
+<h2 id="launching-the-boozang-tool">Launching the Boozang tool </h2>
+<p>After isntallation you can launch the application without the need for the Chrome extension. Do this by accessing the fragemnt in a web browser like</p>
+<p><a href="http://myapplication.com/bz.html">http://myapplication.com/bz.html</a></p>
+<p>or </p>
+<p><a href="http://myapplication.com/my-renamed-fragment.html">http://myapplication.com/my-renamed-fragment.html</a></p>
+<p>Any tests that have been created using the Chrome extension will still be available, and it´s possible to go between running the tool using the html snippet and Chrome extension.</p>
+<h2 id="cross-browser-testing">Cross-browser testing</h2>
+<p>Using the BZ fragemnt the Boozang tool can now be open in a variety of browsers without the need for any other client install. Current browsers supported are Google Chrome, Firefox, Safari and Opera. We recommend that you use one primary browser for authoring the tests, then running them across the difference browsers. </p>
+<h2 id="user-credentials">User credentials</h2>
+<p>In a secure environment you can add your user credentials to the bz-fragment to avoid entering user credentials. One way to do it is to create a personalized copy of your bz-fragment</p>
+<pre><code class="language-yaml">cd webroot
+cp bz.html bz-mats.html</code></pre>
+<p>and adding the user credentials the following way</p>
+<pre><code class="language-yaml">&lt;DOCTYPE html&gt;&lt;script type='text/javascript' src='//localhost:8000/ide?id=5a0478cd4f69270984c529a3'&gt;&lt;/script&gt;
+&lt;script&gt;
+username="email@domain.com";
+password="password";
+&lt;/script&gt;</code></pre>
+<p>This can be particularly useful when running cross-browser testing to avoind entering login credentials. </p>
                 </section>
 
             </div>
