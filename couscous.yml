@@ -2,7 +2,8 @@ template:
     # Name of the directory containing the website template (default is "website")
     # directory: boozang-fo
     # Or if you are using a remote template, you can set the Git URL
-    url: https://github.com/CouscousPHP/Template-Light.git
+    #url: https://github.com/CouscousPHP/Template-Light.git
+    url: https://github.com/ljunggren/bz-couscous
     # Name of the index file (default is "README.md")
     index: index.md
 
@@ -35,7 +36,135 @@ branch: gh-pages
 
 # Any variable you put in this file is also available in the Twig layouts:
 title: Boozang
-subTitle: Functional Overview
+subTitle: Documentation
+
+# The left menu bar
+menu:
+    sections:
+        main:
+            name: Overview
+            items:
+                why:
+                    text: Why Boozang?
+                    # You can use relative urls
+                    relativeUrl: doc/why.html
+                differences:
+                    text: Key Differences
+                    # Or absolute urls
+                    relativeUrl: doc/differences.html
+        started:
+            name: Getting Started
+            items:
+                installing:
+                    text: Installing Boozang
+                    # You can use relative urls
+                    relativeUrl: doc/installation.html
+                recordingintro:
+                    text: Recording your first test
+                    # Or absolute urls
+                    relativeUrl: doc/firsttest.html
+                writingintro:
+                    text: Writing your first test
+                    # Or absolute urls
+                    relativeUrl: doc/writing.html
+                fragment:
+                    text: The bz snippet
+                    # Or absolute urls
+                    relativeUrl: doc/snippet.html     
+                fragment:
+                    text: CI server integration
+                    # Or absolute urls
+                    relativeUrl: doc/ci.html
+                help:
+                    text: Built-in help function
+                    # Or absolute urls
+                    relativeUrl: doc/help.html
+        functions:
+            name: Function Overview
+            items:
+                recording:
+                    text: Recording tests
+                    # You can use relative urls
+                    relativeUrl: doc/recording.html
+                validating:
+                    text: Validation
+                    # You can use relative urls
+                    relativeUrl: doc/validation.html
+                commenting:
+                    text: Comments
+                    # You can use relative urls
+                    relativeUrl: doc/comment.html
+                validating:
+                    text: Plug test-case
+                    # You can use relative urls
+                    relativeUrl: doc/plug.html
+                extract:
+                    text: Extract data
+                    # You can use relative urls
+                    relativeUrl: doc/extract.html
+                javascript:
+                    text: Java script
+                    # You can use relative urls
+                    relativeUrl: doc/javascript.html
+        data:
+            name: Data handling
+            items:
+                form:
+                    text: Binding data using form fill
+                    # You can use relative urls
+                    relativeUrl: doc/why.html
+                prefilled:
+                    text: Bind pre-filled data
+                    # You can use relative urls
+                    relativeUrl: doc/why.html
+                referencing:
+                    text: Referencing data
+                    # You can use relative urls
+                    relativeUrl: doc/why.html
+        
+        concepts:
+            name: Concepts
+            items:
+                writing:
+                    text: Writing and organizing tests
+                    # You can use relative urls
+                    relativeUrl: doc/why.html
+                recording:
+                    text: Recording your first test
+                    # Or absolute urls
+                    absoluteUrl: https://example.com
+                fragment:
+                    text: The bz fragment
+                    # Or absolute urls
+                    absoluteUrl: https://example.com
+                fragment:
+                    text: CI server integration
+                    # Or absolute urls
+                    absoluteUrl: https://example.com
+      
+        practices:
+            name: Best Practices
+        tool:
+            name: The tool
+        command:
+            name: Running from the command line
+        problems:
+            name: Common problems
+        roadmap:
+            name: Roadmap
+            items: 
+                features:
+                    text: Upcoming features
+                chnagelog:
+                    text: Change Log
+
+
+
+              
+              
+
+
+
 
 # Base URL of the published website (no "/" at the end!)
 # You are advised to set and use this variable to write your links in the HTML layouts
