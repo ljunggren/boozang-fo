@@ -108,10 +108,14 @@ code {
 
 .nav-pills>li>a {
     color: #ebebeb;
-    font-size: small;
+    font-size: 14px;
 }
 
-
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 5px 15px;
+}
 
 .col-sm-offset-3 {
      margin-left: 0;
@@ -124,6 +128,19 @@ code {
 col-lg-offset-2 {
     margin-left: 0px;
 }
+
+body {
+    font-size: 17px;
+}
+
+@media (min-width: 992px)
+.col-sm-offset-3 {
+    padding: 0 6em;
+}
+
+
+
+
 
 
 

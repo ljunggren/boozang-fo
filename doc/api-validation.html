@@ -191,14 +191,21 @@
 
                 
                 <section class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
-                    <h1 id="extracting-data">Extracting data</h1>
-<p>Note: For API versions of these actions check the API section. </p>
-<h2 id="similarities-with-validation">Similarities with Validation</h2>
-<p>With Boozang it´s possible to extract data from the application window. This is very similar to the Validation action, with the difference that the element extracted is copied into a data variable. Make sure to familiarize yourself with the Validation action before reading this section. </p>
-<h2 id="introducing-data">Introducing data</h2>
-<p>Start by defining a data variable in the data tab. For extraction you typically want to use a property. The property can be defined on project, module and test level. Add it on test level if the data will only be used in the test case. Add it on module elvel if the data will be used across different tests in the module, but not on different modules. Add it on project level if it will be used globally. </p>
-<h2 id="extracting-data-action">Extracting data action</h2>
-<p>To add an extract data action, simply click on the Plus icon and select Extract data, then click on an element in the application window you want to extract. </p>
+                    <h1 id="validation">Validation</h1>
+<h2 id="useful-resources">Useful resources</h2>
+<p>In order to simply mockup a REST server we strongly recommend <a href="https://github.com/typicode/json-server">https://github.com/typicode/json-server</a> that allows you to create a fake REST API from a JSON file in less than 30 seconds. </p>
+<h2 id="creating-a-simple-api-validation">Creating a simple API validation</h2>
+<p>The API validation is very similar to a HTML validation except that the validation is done towards an API end-point.  </p>
+<h2 id="validate-exists">Validate Exists</h2>
+<p>The default validation is &quot;Validate Exists&quot;, that will simple verify that the element exists. To edit the validation simply change it from the action detail page.  </p>
+<h2 id="inner-text">Inner Text</h2>
+<p>If you want to validate the content of an element, change the Content format dropdown to innerText. This way the text content of an element is compared. When changing this, the result box will be populated with the content from your application, but can be changed manually. </p>
+<h2 id="data">Data</h2>
+<p>The data format is very powerful, but TODO</p>
+<h2 id="screenshot">Screenshot</h2>
+<p>You can also choose to take a picture of the element and compare that to the image of an element of future runs. This is useful TODO</p>
+<h2 id="the-dom-picker">The DOM picker</h2>
+<p>Sometimes the element you selected in the page isn't the one you intended. In this case, simply click the DOM picker and re-select the element. The DOM picker dialog will popup where you can select exactly what to validate in the DOM tree. Use the checkboxes to select which elements to include in the matching. Make sure that the checkbox has a green highlight, which means the element is uniquely matched (not indexed).</p>
                 </section>
 
             </div>
