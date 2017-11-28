@@ -96,3 +96,38 @@ code {
     white-space: -moz-pre-wrap;
     word-wrap: break-word;
 }
+
+.navbar-default {
+    background-color: #404659;
+}
+
+#sidebar .text-muted {
+    color: #979eb4;
+    font-size: large;
+}
+
+.nav-pills>li>a {
+    color: #ebebeb;
+    font-size: small;
+}
+
+
+
+.col-sm-offset-3 {
+     margin-left: 0;
+}
+
+#sidebar {
+    position: relative;
+}
+
+col-lg-offset-2 {
+    margin-left: 0px;
+}
+
+
+
+
+
+
+
