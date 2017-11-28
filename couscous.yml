@@ -123,25 +123,16 @@ menu:
                     relativeUrl: doc/why.html
         
         concepts:
-            name: Concepts
+            name: API testing
             items:
                 writing:
-                    text: Writing and organizing tests
+                    text: Validation of API end-points
                     # You can use relative urls
-                    relativeUrl: doc/why.html
+                    relativeUrl: doc/api-validation.html
                 recording:
-                    text: Recording your first test
+                    text: Extract data from API end-points
                     # Or absolute urls
-                    absoluteUrl: https://example.com
-                fragment:
-                    text: The bz fragment
-                    # Or absolute urls
-                    absoluteUrl: https://example.com
-                fragment:
-                    text: CI server integration
-                    # Or absolute urls
-                    absoluteUrl: https://example.com
-      
+                    relativeUrl: doc/api-extraction.html              
         practices:
             name: Best Practices
         tool:
