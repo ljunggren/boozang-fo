@@ -34,27 +34,27 @@ boozang --screenshot --file=images/test-data "http://ai.boozang.com/extension?id
 # Action Level
 
 # Validate
-boozang --screenshot --file=images/action-validate "http://ai.boozang.com/extension?id=5a232609ea50fc30f5770433&token=9dd9607bc1224a5390a51577d215eef0#5a232609ea50fc30f5770433/0.0.1/m1/t2/1/"
+boozang --screenshot --file=images/action-validate "http://ai.boozang.com/extension?id=5a232609ea50fc30f5770433&token=9dd9607bc1224a5390a51577d215eef0#5a232609ea50fc30f5770433/0.0.1/m1/t2/0/"
 
 # Mouse
-boozang --screenshot --file=images/action-mouse "http://ai.boozang.com/extension?id=5a232609ea50fc30f5770433&token=9dd9607bc1224a5390a51577d215eef0#5a232609ea50fc30f5770433/0.0.1/m1/t2/2/"
+boozang --screenshot --file=images/action-mouse "http://ai.boozang.com/extension?id=5a232609ea50fc30f5770433&token=9dd9607bc1224a5390a51577d215eef0#5a232609ea50fc30f5770433/0.0.1/m1/t2/1/"
 
 # Keyboard
-boozang --screenshot --file=images/action-keyboard "http://ai.boozang.com/extension?id=5a232609ea50fc30f5770433&token=9dd9607bc1224a5390a51577d215eef0#5a232609ea50fc30f5770433/0.0.1/m1/t2/3/"
+boozang --screenshot --file=images/action-keyboard "http://ai.boozang.com/extension?id=5a232609ea50fc30f5770433&token=9dd9607bc1224a5390a51577d215eef0#5a232609ea50fc30f5770433/0.0.1/m1/t2/2/"
 
 # Extract
-boozang --screenshot --file=images/action-extract "http://ai.boozang.com/extension?id=5a232609ea50fc30f5770433&token=9dd9607bc1224a5390a51577d215eef0#5a232609ea50fc30f5770433/0.0.1/m1/t2/4/"
+boozang --screenshot --file=images/action-extract "http://ai.boozang.com/extension?id=5a232609ea50fc30f5770433&token=9dd9607bc1224a5390a51577d215eef0#5a232609ea50fc30f5770433/0.0.1/m1/t2/3/"
 # JS
-boozang --screenshot --file=images/action-javascript "http://ai.boozang.com/extension?id=5a232609ea50fc30f5770433&token=9dd9607bc1224a5390a51577d215eef0#5a232609ea50fc30f5770433/0.0.1/m1/t2/5/"
+boozang --screenshot --file=images/action-javascript "http://ai.boozang.com/extension?id=5a232609ea50fc30f5770433&token=9dd9607bc1224a5390a51577d215eef0#5a232609ea50fc30f5770433/0.0.1/m1/t2/4/"
 
 # Plug
-boozang --screenshot --file=images/action-plug "http://ai.boozang.com/extension?id=5a232609ea50fc30f5770433&token=9dd9607bc1224a5390a51577d215eef0#5a232609ea50fc30f5770433/0.0.1/m1/t2/6/"
+boozang --screenshot --file=images/action-plug "http://ai.boozang.com/extension?id=5a232609ea50fc30f5770433&token=9dd9607bc1224a5390a51577d215eef0#5a232609ea50fc30f5770433/0.0.1/m1/t2/5/"
 
 # Comment
-boozang --screenshot --file=images/action-comment "http://ai.boozang.com/extension?id=5a232609ea50fc30f5770433&token=9dd9607bc1224a5390a51577d215eef0#5a232609ea50fc30f5770433/0.0.1/m1/t2/7/"
+boozang --screenshot --file=images/action-comment "http://ai.boozang.com/extension?id=5a232609ea50fc30f5770433&token=9dd9607bc1224a5390a51577d215eef0#5a232609ea50fc30f5770433/0.0.1/m1/t2/6/"
 
 # Refresh
-boozang --screenshot --file=images/action-refresh "http://ai.boozang.com/extension?id=5a232609ea50fc30f5770433&token=9dd9607bc1224a5390a51577d215eef0#5a232609ea50fc30f5770433/0.0.1/m1/t2/8/"
+boozang --screenshot --file=images/action-refresh "http://ai.boozang.com/extension?id=5a232609ea50fc30f5770433&token=9dd9607bc1224a5390a51577d215eef0#5a232609ea50fc30f5770433/0.0.1/m1/t2/7/"
 
 ## Bugs
 boozang --screenshot --file=images/bugs "http://ai.boozang.com/extension?id=5a232609ea50fc30f5770433&token=9dd9607bc1224a5390a51577d215eef0#5a232609ea50fc30f5770433/0.0.1/bug"
