@@ -121,7 +121,7 @@ on the project level and will affect all new sessions for other users. Note: Sav
 
 ### General ###
 
-![example image](images/settings_general.png "An exemplary image")
+![example image](images/settings-general.png "An exemplary image")
 
 The General Settings tab allows the user to control basic test functionality and look & feel. Explanation of functions from top to bottom
 
@@ -224,13 +224,13 @@ This allows you to setup email notification for test runs.
 Server Host
  : Which server you want to send test reports to.
 
-![example image](images/settings_subscription.png "An exemplary image")
+![example image](images/settings-subscriptions.png "An exemplary image")
 
 ### Service ###
 
 This is a experimental screen for posting TR reports and screen-shots to an external API.
 
-![example image](images/settings_service.png "An exemplary image")
+![example image](images/settings-service.png "An exemplary image")
 
 
 Test View
@@ -238,7 +238,7 @@ Test View
 
 The main test view is shown as soon as a test is selected in the left-hand tree navigation.
 
-![example image](images/test_view.png "An exemplary image")
+![example image](images/test-actions.png "An exemplary image")
 
 Here is an explanation of the different functions
 
@@ -319,7 +319,7 @@ The Validate action creates and asserts condition, and is used to make sure a ce
 
 Validate (HTML)
 
-![example image](images/action_validate.png "An exemplary image")
+![example image](images/action-validate.png "An exemplary image")
 
 The asserts conditions can be done very flexible. The default asserts condition is an HTML asserts equal using BZ Format.
 Below follows an explanation of the fields:
@@ -404,7 +404,7 @@ Ref of Failed
 
 The trigger event functionality is used to emulate an event in the browser. This is also what is generated automatically by the record function.
 
-![example image](images/action_triggerevent.png "An exemplary image")
+![example image](images/action-mouse.png "An exemplary image")
 
 Element
  : This is the DOM tree element that the trigger event is acting on
@@ -421,7 +421,7 @@ The extract data is used to extract data from the page or from API calls. Just l
 
 Extract Data (HTML)
 
-![example image](images/action_extractdata.png "An exemplary image")
+![example image](images/action-extract.png "An exemplary image")
 
 Method
  : For the HTML method, it extracts data from the page. 
@@ -492,7 +492,7 @@ Ref of Failed
 
 The JS Code action is straightforward and allows for executing Java script directly in the browser. 
 
-![example image](images/action_jscode.png "An exemplary image")
+![example image](images/action-javascript.png "An exemplary image")
 
 Element
  : This is the DOM tree element that we are executing the script on.
@@ -509,7 +509,7 @@ Script
 This is the Goto functionality of the Boozang tool. This is often done to link together more basic test cases to larger, more complicated 
 chains of tests. 
 
-![example image](images/action_plug.png "An exemplary image")
+![example image](images/action-plug.png "An exemplary image")
 
 Ref of Pass
  : This is the Goto condition. A plug-tests case always executes successfully. 
@@ -522,7 +522,7 @@ Ref of Failed
 
 The comment allows you to create annotations directly in the page. This is really useful to highlight bugs and do point out look&feel discrepancies.
 
-![example image](images/action_comment.png "An exemplary image")
+![example image](images/action-comment.png "An exemplary image")
 
 Element
  : This is the DOM tree element that we are annotating. 
@@ -531,4 +531,4 @@ Element
 
 This refreshes the whole page.
 
-![example image](images/action_refresh.png "An exemplary image")
+![example image](images/action-refresh.png "An exemplary image")

@@ -79,6 +79,17 @@ menu:
                     text: Built-in help function
                     # Or absolute urls
                     relativeUrl: doc/help.html
+        modulesandtests:
+            name: Modules and Tests
+            items:
+                modules:
+                    text: Modules
+                    # You can use relative urls
+                    relativeUrl: doc/modules.html
+                testtypes:
+                    text: Test Types
+                    relativeUrl: doc/testtypes.html
+                    # Or absolute urls
         functions:
             name: Function Overview
             items:
@@ -132,7 +143,17 @@ menu:
                 recording:
                     text: Extract data from API end-points
                     # Or absolute urls
-                    relativeUrl: doc/api-extraction.html              
+                    relativeUrl: doc/api-extract.html              
+        team:
+            name: Team Collaboration
+            items:
+                adding:
+                    text: Managing Team
+                    relativeURL: doc/adding-team.html
+                collaboration: 
+                    text: Team collaboration
+                    relativeURL: doc/adding-team.html
+
         practices:
             name: Best Practices
         tool:

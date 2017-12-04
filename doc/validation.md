@@ -1,6 +1,9 @@
 Validation
 ============
 
+![example image](../images/action-validate.png "An exemplary image")
+
+
 Creating a simple validation
 ----------------------------
 In a test it´s common to make sure that a certain result what acheieved. In Boozang we do this using validations, also called assertions. To create a validation, simply click on the validation icon and select the element to validate in the application window. 

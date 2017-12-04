@@ -1,15 +1,25 @@
-Extracting data
-============
-
-Note: For API versions of these actions check the API section. 
+Extracting data from an API
+===========================
 
 Similarities with Validation
 ---------------
-With Boozang it´s possible to extract data from the application window. This is very similar to the Validation action, with the difference that the element extracted is copied into a data variable. Make sure to familiarize yourself with the Validation action before reading this section. 
+Extracting data is identical to API validation except that the returned respons will be saved in a data variable. Make sure to familiarize yourself with the API Validation action before reading this section. 
 
 Introducing data
 ----------------
-Start by defining a data variable in the data tab. For extraction you typically want to use a property. The property can be defined on project, module and test level. Add it on test level if the data will only be used in the test case. Add it on module elvel if the data will be used across different tests in the module, but not on different modules. Add it on project level if it will be used globally. 
+Start by defining a data variable in the data tab. For extraction of API data you typically want to use an Object. The Object can be defined on project, module and test level. Add it on test level if the data will only be used in the test case. Add it on module level if the data will be used across different tests in the module, but not on different modules. Add it on project level if it will be used globally. 
+
+Assigning data
+--------------
+The result will be contained in the $result variable. To assign the API response to test data called "dummy" write the following in the Extract Data window
+
+$test.dummy = $result
+
+
+Data Conversion
+----------------
+
+
 
 Extracting data action
 ----------------------
