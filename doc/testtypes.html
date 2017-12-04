@@ -223,13 +223,17 @@
 
                 
                 <section class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
-                    <h1 id="the-help-function">The Help function</h1>
-<h2 id="saas-and-new-features">SaaS and new features</h2>
-<p>As Boozang is completely hosted in the Cloud it´s easy to do changes and add useful features quickly. This has a huge upside as we are able to deploy features that customer asks for to all our customers at the same time, to the benefit of all. This also means that new things can appear in the user interface without warning, and in some cases, that the documentation might not be up-to-date all the time. </p>
-<h2 id="in-tool-help">In-tool help</h2>
-<p>For this reason, to be able to deliver new features fast without forcing the end user to re-learn, we added an online help function inside the tool. Simply click the question mark in the user interface, and click the functionality and an explanation will appear. </p>
-<h2 id="videos">Videos</h2>
-<p>In the help text you will find an explanation of the function you selected. You will also find any related videos to that function, if available. When clicking a video link, a separate video window will appear and you will be able to follow along in the tool if needed. </p>
+                    <h1 id="test-types">Test Types</h1>
+<h2 id="different-kinds-of-tests">Different kinds of tests</h2>
+<p>Boozang currently supports four different test types: Atomic, Functional, Composite and Bugs, These are actually very similar technically, but are conceptually different. The difference in icon also helps you to quickly classify which kind of test it is. </p>
+<h2 id="atomic-tests">Atomic Tests</h2>
+<p>Atomic tests are building block for higher other tests. The atomic tests is usually comprised of a single action, such as Add Item or Delete Item. One thing that is notably different with atomic tests is that when being recorded they doesn´t relaod the URL, but assume that the test window is already at the right state. This makes them very fast to run, and ideal to stich together to form more complex functions. </p>
+<h2 id="function-tests">Function Tests</h2>
+<p>Function tests perform a function and usually cleans up after themselves. Function tests usually maps to requirements and a function tests, such as Item Search, might have data provisioning actions tied to it. In the example above, the Item Search test have calls a number of Atomic tests, such as Add Item and Delete Item.</p>
+<h2 id="composite-tests">Composite Tests</h2>
+<p>Composite tests are more complex tests, that stiches together atomic or unit tests. They are also used to build test suites, calling a list of function tests. As they are functionally very similar, it´s up to the test team how to best make use of the classification, and where the line between functiona and composite test should be drawn.</p>
+<h2 id="bugs">Bugs</h2>
+<p>Bugs are used to highlight a (usually visual) bug in the application. Becuase a failed test run can also denote a bug, the bug classification is usually used to point out a discrepancy using the Comment action. A typical Bug could be pointing out an incorrectly rendered image or an editorial problem, and allows one team member to communicate this to another team member without writing a bug report. This allows for quick turn-around of issues that can often be hard to reproduce when done manually. </p>
                 </section>
 
             </div>

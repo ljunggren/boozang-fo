@@ -79,6 +79,22 @@
                                     </li>
                                                             </ul>
                                                     <p class="text-muted">
+                                Modules and Tests
+                            </p>
+
+                            <ul class="nav nav-pills nav-stacked">
+                                                                    <li class="">
+                                        <a href="https://ljunggren.github.io/boozang-fo/doc/modules.html">
+                                            Modules
+                                        </a>
+                                    </li>
+                                                                    <li class="">
+                                        <a href="https://ljunggren.github.io/boozang-fo/doc/testtypes.html">
+                                            Test Types
+                                        </a>
+                                    </li>
+                                                            </ul>
+                                                    <p class="text-muted">
                                 Function Overview
                             </p>
 
@@ -141,8 +157,24 @@
                                         </a>
                                     </li>
                                                                     <li class="">
-                                        <a href="https://ljunggren.github.io/boozang-fo/doc/api-extraction.html">
+                                        <a href="https://ljunggren.github.io/boozang-fo/doc/api-extract.html">
                                             Extract data from API end-points
+                                        </a>
+                                    </li>
+                                                            </ul>
+                                                    <p class="text-muted">
+                                Team Collaboration
+                            </p>
+
+                            <ul class="nav nav-pills nav-stacked">
+                                                                    <li class="">
+                                        <a href="https://ljunggren.github.io/boozang-fo/">
+                                            Managing Team
+                                        </a>
+                                    </li>
+                                                                    <li class="">
+                                        <a href="https://ljunggren.github.io/boozang-fo/">
+                                            Team collaboration
                                         </a>
                                     </li>
                                                             </ul>
@@ -191,21 +223,24 @@
 
                 
                 <section class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
-                    <h1 id="validation">Validation</h1>
+                    <h1 id="validation-of-api-end-points">Validation of API end-points</h1>
 <h2 id="useful-resources">Useful resources</h2>
 <p>In order to simply mockup a REST server we strongly recommend <a href="https://github.com/typicode/json-server">https://github.com/typicode/json-server</a> that allows you to create a fake REST API from a JSON file in less than 30 seconds. </p>
-<h2 id="creating-a-simple-api-validation">Creating a simple API validation</h2>
-<p>The API validation is very similar to a HTML validation except that the validation is done towards an API end-point.  </p>
-<h2 id="validate-exists">Validate Exists</h2>
-<p>The default validation is &quot;Validate Exists&quot;, that will simple verify that the element exists. To edit the validation simply change it from the action detail page.  </p>
-<h2 id="inner-text">Inner Text</h2>
-<p>If you want to validate the content of an element, change the Content format dropdown to innerText. This way the text content of an element is compared. When changing this, the result box will be populated with the content from your application, but can be changed manually. </p>
+<h2 id="introduction-to-api-validations">Introduction to API validations</h2>
+<p>The API validation is very similar to a HTML validation except that the validation is done towards an API end-point. Simply click on the Plus-sign and choose &quot;Validation&quot;, and select Request/Response (API). In actions details you can now input the API end-point URL and HTTP method (GET, POST, DELETE, etc.).</p>
+<h2 id="doing-http-get-validation">Doing HTTP GET validation</h2>
+<p>Use HTTP method GET to validate a response from a REST API. Simply select HTTP method GET and enter the end-point URL. Click Play on the action to automatically populate the expectation value. </p>
+<h2 id="doing-a-http-get-without-validation">Doing a HTTP GET without validation</h2>
+<p>In order to trigger the HTTP GET without validating the result simply use comparison operator to &quot;regexp&quot; and set the expectation field to &quot;.*&quot;. </p>
+<h2 id="adding-custom-headers">Adding custom headers</h2>
+<p>When doing API calls it's very common that you need to add custom HTTP request headers. In order to do this click HTTP headers and add header data. This needs to be in data format, i.e.</p>
+<p>{
+Accept:&quot;json&quot;
+}</p>
+<h2 id="doing-http-post-validation">Doing HTTP POST validation</h2>
+<p>You can post data to an API end-pont using HTTP method POST. When doing thi make sure to add the POST data to the HTTP data field. </p>
 <h2 id="data">Data</h2>
-<p>The data format is very powerful, but TODO</p>
-<h2 id="screenshot">Screenshot</h2>
-<p>You can also choose to take a picture of the element and compare that to the image of an element of future runs. This is useful TODO</p>
-<h2 id="the-dom-picker">The DOM picker</h2>
-<p>Sometimes the element you selected in the page isn't the one you intended. In this case, simply click the DOM picker and re-select the element. The DOM picker dialog will popup where you can select exactly what to validate in the DOM tree. Use the checkboxes to select which elements to include in the matching. Make sure that the checkbox has a green highlight, which means the element is uniquely matched (not indexed).</p>
+<p>In all these fields you can also bind data. As an example, in order to set headers as data this can be done as an object, for instance &quot;jsonheader&quot;,&quot;Accept&quot;,&quot;json&quot;. In order to reference it on the actions details use {{$test.jsonheader}} in the header field. </p>
                 </section>
 
             </div>

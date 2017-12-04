@@ -79,6 +79,22 @@
                                     </li>
                                                             </ul>
                                                     <p class="text-muted">
+                                Modules and Tests
+                            </p>
+
+                            <ul class="nav nav-pills nav-stacked">
+                                                                    <li class="">
+                                        <a href="https://ljunggren.github.io/boozang-fo/doc/modules.html">
+                                            Modules
+                                        </a>
+                                    </li>
+                                                                    <li class="">
+                                        <a href="https://ljunggren.github.io/boozang-fo/doc/testtypes.html">
+                                            Test Types
+                                        </a>
+                                    </li>
+                                                            </ul>
+                                                    <p class="text-muted">
                                 Function Overview
                             </p>
 
@@ -141,8 +157,24 @@
                                         </a>
                                     </li>
                                                                     <li class="">
-                                        <a href="https://ljunggren.github.io/boozang-fo/doc/api-extraction.html">
+                                        <a href="https://ljunggren.github.io/boozang-fo/doc/api-extract.html">
                                             Extract data from API end-points
+                                        </a>
+                                    </li>
+                                                            </ul>
+                                                    <p class="text-muted">
+                                Team Collaboration
+                            </p>
+
+                            <ul class="nav nav-pills nav-stacked">
+                                                                    <li class="">
+                                        <a href="https://ljunggren.github.io/boozang-fo/">
+                                            Managing Team
+                                        </a>
+                                    </li>
+                                                                    <li class="">
+                                        <a href="https://ljunggren.github.io/boozang-fo/">
+                                            Team collaboration
                                         </a>
                                     </li>
                                                             </ul>
@@ -291,7 +323,7 @@ Validation Ignore, Subscription, Service. As soon as you update any settings in 
 and will persist between sessions for your user. If it's desired to change a setting for the whole project, use Save As Default. This change will be set
 on the project level and will affect all new sessions for other users. Note: Save As Default require Modify-privileges on the Project-level.</p>
 <h3 id="general">General</h3>
-<p><img src="images/settings_general.png" alt="example image" title="An exemplary image" /></p>
+<p><img src="images/settings-general.png" alt="example image" title="An exemplary image" /></p>
 <p>The General Settings tab allows the user to control basic test functionality and look &amp; feel. Explanation of functions from top to bottom</p>
 <dl>
 <dt>Default Root URL</dt>
@@ -371,13 +403,13 @@ being build when doing a validation. This can also be set on each validation act
 <dt>Server Host</dt>
 <dd>Which server you want to send test reports to.</dd>
 </dl>
-<p><img src="images/settings_subscription.png" alt="example image" title="An exemplary image" /></p>
+<p><img src="images/settings-subscriptions.png" alt="example image" title="An exemplary image" /></p>
 <h3 id="service">Service</h3>
 <p>This is a experimental screen for posting TR reports and screen-shots to an external API.</p>
-<p><img src="images/settings_service.png" alt="example image" title="An exemplary image" /></p>
+<p><img src="images/settings-service.png" alt="example image" title="An exemplary image" /></p>
 <h2 id="test-view">Test View</h2>
 <p>The main test view is shown as soon as a test is selected in the left-hand tree navigation.</p>
-<p><img src="images/test_view.png" alt="example image" title="An exemplary image" /></p>
+<p><img src="images/test-actions.png" alt="example image" title="An exemplary image" /></p>
 <p>Here is an explanation of the different functions</p>
 <dl>
 <dt>Record</dt>
@@ -430,7 +462,7 @@ will be done for an action before failing. The minimum threshold is the wait tha
 <h3 id="validate">Validate</h3>
 <p>The Validate action creates and asserts condition, and is used to make sure a certain element of the page is as expected. A typical asserts condition could be a simple asserts-equals condition, such as making sure that after adding an item to cart, the item is present in the cart. The validation is a very versatile function and can be divided into HTML, SCRIPT, or DATA.</p>
 <p>Validate (HTML)</p>
-<p><img src="images/action_validate.png" alt="example image" title="An exemplary image" /></p>
+<p><img src="images/action-validate.png" alt="example image" title="An exemplary image" /></p>
 <p>The asserts conditions can be done very flexible. The default asserts condition is an HTML asserts equal using BZ Format.
 Below follows an explanation of the fields:</p>
 <dl>
@@ -489,7 +521,7 @@ Below follows an explanation of the fields:</p>
 </dl>
 <h3 id="trigger-event">Trigger Event</h3>
 <p>The trigger event functionality is used to emulate an event in the browser. This is also what is generated automatically by the record function.</p>
-<p><img src="images/action_triggerevent.png" alt="example image" title="An exemplary image" /></p>
+<p><img src="images/action-mouse.png" alt="example image" title="An exemplary image" /></p>
 <dl>
 <dt>Element</dt>
 <dd>This is the DOM tree element that the trigger event is acting on</dd>
@@ -501,7 +533,7 @@ Below follows an explanation of the fields:</p>
 <h3 id="extract-data">Extract Data</h3>
 <p>The extract data is used to extract data from the page or from API calls. Just like validate, it's easier to handle these cases separately</p>
 <p>Extract Data (HTML)</p>
-<p><img src="images/action_extractdata.png" alt="example image" title="An exemplary image" /></p>
+<p><img src="images/action-extract.png" alt="example image" title="An exemplary image" /></p>
 <dl>
 <dt>Method</dt>
 <dd>For the HTML method, it extracts data from the page.</dd>
@@ -550,7 +582,7 @@ Below follows an explanation of the fields:</p>
 </dl>
 <h3 id="js-code">JS Code</h3>
 <p>The JS Code action is straightforward and allows for executing Java script directly in the browser. </p>
-<p><img src="images/action_jscode.png" alt="example image" title="An exemplary image" /></p>
+<p><img src="images/action-javascript.png" alt="example image" title="An exemplary image" /></p>
 <dl>
 <dt>Element</dt>
 <dd>This is the DOM tree element that we are executing the script on.</dd>
@@ -564,7 +596,7 @@ return xxx;
 <h3 id="plug-test-case">Plug test-case</h3>
 <p>This is the Goto functionality of the Boozang tool. This is often done to link together more basic test cases to larger, more complicated
 chains of tests. </p>
-<p><img src="images/action_plug.png" alt="example image" title="An exemplary image" /></p>
+<p><img src="images/action-plug.png" alt="example image" title="An exemplary image" /></p>
 <dl>
 <dt>Ref of Pass</dt>
 <dd>This is the Goto condition. A plug-tests case always executes successfully.</dd>
@@ -573,14 +605,14 @@ chains of tests. </p>
 </dl>
 <h3 id="comment">Comment</h3>
 <p>The comment allows you to create annotations directly in the page. This is really useful to highlight bugs and do point out look&amp;feel discrepancies.</p>
-<p><img src="images/action_comment.png" alt="example image" title="An exemplary image" /></p>
+<p><img src="images/action-comment.png" alt="example image" title="An exemplary image" /></p>
 <dl>
 <dt>Element</dt>
 <dd>This is the DOM tree element that we are annotating.</dd>
 </dl>
 <h3 id="refresh">Refresh</h3>
 <p>This refreshes the whole page.</p>
-<p><img src="images/action_refresh.png" alt="example image" title="An exemplary image" /></p>
+<p><img src="images/action-refresh.png" alt="example image" title="An exemplary image" /></p>
                 </section>
 
             </div>
