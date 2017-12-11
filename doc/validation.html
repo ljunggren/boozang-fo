@@ -115,6 +115,11 @@
                                         </a>
                                     </li>
                                                                     <li class="">
+                                        <a href="https://ljunggren.github.io/boozang-fo/doc/plug.html">
+                                            Plug test-case
+                                        </a>
+                                    </li>
+                                                                    <li class="">
                                         <a href="https://ljunggren.github.io/boozang-fo/doc/extract.html">
                                             Extract data
                                         </a>
@@ -126,23 +131,28 @@
                                     </li>
                                                             </ul>
                                                     <p class="text-muted">
-                                Data handling
+                                Data-driven testing
                             </p>
 
                             <ul class="nav nav-pills nav-stacked">
                                                                     <li class="">
-                                        <a href="https://ljunggren.github.io/boozang-fo/doc/why.html">
-                                            Binding data using form fill
+                                        <a href="https://ljunggren.github.io/boozang-fo/doc/why-data.html">
+                                            Why data?
                                         </a>
                                     </li>
                                                                     <li class="">
-                                        <a href="https://ljunggren.github.io/boozang-fo/doc/why.html">
+                                        <a href="https://ljunggren.github.io/boozang-fo/doc/new-data.html">
+                                            Binding new data
+                                        </a>
+                                    </li>
+                                                                    <li class="">
+                                        <a href="https://ljunggren.github.io/boozang-fo/doc/pre-data.html">
                                             Bind pre-filled data
                                         </a>
                                     </li>
                                                                     <li class="">
-                                        <a href="https://ljunggren.github.io/boozang-fo/doc/why.html">
-                                            Referencing data
+                                        <a href="https://ljunggren.github.io/boozang-fo/doc/validate-data.html">
+                                            Validating using data
                                         </a>
                                     </li>
                                                             </ul>
@@ -226,17 +236,25 @@
                     <h1 id="validation">Validation</h1>
 <p><img src="../images/action-validate.png" alt="example image" title="An exemplary image" /></p>
 <h2 id="creating-a-simple-validation">Creating a simple validation</h2>
-<p>In a test it´s common to make sure that a certain result what acheieved. In Boozang we do this using validations, also called assertions. To create a validation, simply click on the validation icon and select the element to validate in the application window. </p>
+<p>In a test it´s common to make sure that a certain outcome is acheieved. In Boozang we do this using validations, also known as assertions. To create a validation, simply click on the validation icon and select the element to validate in the application window. The default validation content format: &quot;validate exists&quot; will be created. If you want to change validation content format to &quot;innerText&quot;, &quot;data&quot;, or &quot;screenshot&quot; you can do this in the tool window. </p>
 <h2 id="validate-exists">Validate Exists</h2>
-<p>The default validation is &quot;Validate Exists&quot;, that will simple verify that the element exists. To edit the validation simply change it from the action detail page.  </p>
+<p>The default validation is &quot;Validate Exists&quot;, that will simple verify that the element exists. To edit the validation conten format simply change it from the action detail page. The expectation value will be automatically updated. </p>
 <h2 id="inner-text">Inner Text</h2>
-<p>If you want to validate the content of an element, change the Content format dropdown to innerText. This way the text content of an element is compared. When changing this, the result box will be populated with the content from your application, but can be changed manually. </p>
+<p>If you want to validate the content of an element, change the Content format dropdown to innerText. This way the text content of an element is compared. When changing this, the result box will be populated with the content from your application, but can be changed manually. This is very useful for string comparisons. One advantage of using Inner Text is that upon validation failure, the report will contain the difference between expected and real result. </p>
 <h2 id="data">Data</h2>
 <p>The data format is very powerful, but TODO</p>
 <h2 id="screenshot">Screenshot</h2>
 <p>You can also choose to take a picture of the element and compare that to the image of an element of future runs. This is useful TODO</p>
 <h2 id="the-dom-picker">The DOM picker</h2>
 <p>Sometimes the element you selected in the page isn't the one you intended. In this case, simply click the DOM picker and re-select the element. The DOM picker dialog will popup where you can select exactly what to validate in the DOM tree. Use the checkboxes to select which elements to include in the matching. Make sure that the checkbox has a green highlight, which means the element is uniquely matched (not indexed).</p>
+<h2 id="javascript-validations">Javascript validations</h2>
+<p>The default validation is the HTML validation. By changing method to &quot;Script&quot; you can directly do validations using Javascript. The Javascript function written in the standard Boozang format</p>
+<pre><code>(function(){
+    //return true/false;
+    })()</code></pre>
+<p>and must return true or false. If an element has been picked with the DOM picker this will be available using the handle $element. Standard data handles, such as $project, $module, and $test will also be available, as well as the test window handle $TW. For more information about data see <a href="/doc/data.html">data</a> section. </p>
+<h2 id="api-validations">API validations</h2>
+<p>See section for API validations <a href="/doc/api-validation.html">here</a>.</p>
                 </section>
 
             </div>
