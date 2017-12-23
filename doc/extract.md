@@ -3,6 +3,9 @@ Extracting data
 
 Note: For API versions of these actions check the API section. 
 
+
+![example image](../images/action-extract.png "An exemplary image")
+
 Similarities with Validation
 ---------------
 With Boozang it´s possible to extract data from the application window. This is very similar to the Validation action, with the difference that the element extracted is copied into a data variable. Make sure to familiarize yourself with the Validation action before reading this section. 

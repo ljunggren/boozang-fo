@@ -1,5 +1,7 @@
-Connecting tests together
+Plug test-case
 =========================
+
+![example image](../images/action-plug.png "An exemplary image")
 
 Plug test-case action
 -------------------------

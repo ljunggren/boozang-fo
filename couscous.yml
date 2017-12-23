@@ -105,7 +105,7 @@ menu:
                     text: Comments
                     # You can use relative urls
                     relativeUrl: doc/comment.html
-                validating:
+                plug:
                     text: Plug test-case
                     # You can use relative urls
                     relativeUrl: doc/plug.html
@@ -118,21 +118,28 @@ menu:
                     # You can use relative urls
                     relativeUrl: doc/javascript.html
         data:
-            name: Data handling
+            name: Data-driven testing
             items:
-                form:
-                    text: Binding data using form fill
+                why-data:
+                    text: Why data?
                     # You can use relative urls
-                    relativeUrl: doc/why.html
-                prefilled:
-                    text: Bind pre-filled data
+                    relativeUrl: doc/why-data.html 
+                datatype:
+                    text: Data Types
                     # You can use relative urls
-                    relativeUrl: doc/why.html
+                    relativeUrl: doc/data-types.html
+                binding:
+                    text: Binding data
+                    # You can use relative urls
+                    relativeUrl: doc/data-bind.html
                 referencing:
-                    text: Referencing data
+                    text: Validating using data
                     # You can use relative urls
-                    relativeUrl: doc/why.html
-        
+                    relativeUrl: doc/validate-data.html
+                advanceddata:
+                    text: Advanced data handling
+                    # You can use relative urls
+                    relativeUrl: doc/advanced-data.html  
         concepts:
             name: API testing
             items:

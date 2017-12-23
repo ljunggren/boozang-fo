@@ -1,6 +1,8 @@
 Javascript coding
 =================
 
+![example image](../images/action-javascript.png "An exemplary image")
+
 The Javascript action
 ---------------------
 Boozang also allows you to execute Javascript directly in the application. This can be very useful when trying to do more advanced things that isn't covered by the set of actions Boozang has out-of-the-box. 

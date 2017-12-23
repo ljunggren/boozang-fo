@@ -1,9 +1,13 @@
 Modules
 =======
 
+![example image](../images/project-modules.png "An exemplary image")
+
 Object-Oriented testing
 -----------------------
 Boozang takes an object-oriented approach to testing. Just like your application can be divided into modules and sub-modules, so can your tests. It takes some experience to make the perfect test break-down, and it´s different from application to application. Usually it´s best to try and mirror the components, or modules, of the application in the Boozang tool. The below image gives an example of this
+
+![example image](../images/ootesting.png "An exemplary image")
 
 Modules
 -------
