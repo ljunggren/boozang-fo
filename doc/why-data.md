@@ -1,5 +1,5 @@
-Why use data?
-============
+Why treat data separately?
+===========
 
 Problems with "normal" recording of forms
 -----------------------------------------
@@ -8,3 +8,4 @@ Recording is an amazing way to quickly automate navigation and other mouse or ke
 A new type of record
 --------------------
 Luckily, Boozang introduces a new type of record where data is captured in "variables" completly separate from the recorded actions. This means a test case can be fed with different types of data, and in order to enter a large data set, like entering orders into a system, we can use "data loops".
+

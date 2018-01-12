@@ -36,4 +36,4 @@ It is also possible to fetch data from an external source. Simply type in a URL 
 
 JS (Javascript functions)
 -------------------------
-It is also possible to specify Javascript functions directly. 
+It is also possible to specify Javascript functions directly. The functions can be in two forms: Date.now() or 
