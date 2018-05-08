@@ -11,7 +11,7 @@ The Boozang syntax aims to be as close to natural language as possible. The synt
 
 Running a test
 ---------------
-To run a test instruction the Boozang syntax needs to be converted to test ations. In order to do this you simply click the magic wand inside the tool, and choose "Generate actions based on descriptions". This will automatically convert each test instruction into an action and run the action. By running each action the Boozang tool is always workig on the "current" state of the application so it's able to do more accurate interpretations of the Boozang syntax. This approach is vastly superior to stateless key-word driven test tools that has no information of the state of the application, which means the syntax will be very unforgiving to mistakes. 
+To run a test instruction the Boozang syntax needs to be converted to test ations. In order to do this you simply click the magic wand inside the tool, and choose "Generate actions based on descriptions". This will automatically convert each test instruction into an action and run the action. By running each action the Boozang tool is always working on the "current" state of the application so it's able to do more accurate interpretations of the Boozang syntax. This approach is vastly superior to stateless key-word driven test tools that has no information of the state of the application, which means the syntax will be very unforgiving to mistakes. 
 
 Generating test instructions
 ---------------

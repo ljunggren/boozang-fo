@@ -12,7 +12,7 @@ With Boozang it´s possible to extract data from the application window. This is
 
 Introducing data
 ----------------
-Start by defining a data variable in the data tab. For extraction you typically want to use a property. The property can be defined on project, module and test level. Add it on test level if the data will only be used in the test case. Add it on module elvel if the data will be used across different tests in the module, but not on different modules. Add it on project level if it will be used globally. 
+Start by defining a data variable in the data tab. For extraction you typically want to use a property. The property can be defined on project, module and test level. Add it on test level if the data will only be used in the test case. Add it on module level if the data will be used across different tests in the module, but not on different modules. Add it on project level if it will be used globally. 
 
 Extracting data action
 ----------------------

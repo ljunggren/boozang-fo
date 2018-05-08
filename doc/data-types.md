@@ -10,12 +10,12 @@ Boozang supports a number of different data types: Property, Object, Array, CSV,
 
 Properties
 ----------
-The property is a simple name-value pair, and can be referenced directly. For instance, a property username = boozang added on test-level, can be referenced {{$test.username}} (==boozang). Pro-tip: You can verify this in execution by printing it to your application console window by creating the following Javascript action $TW.console.log($test.username).
+The property is a simple name-value pair, and can be referenced directly. For instance, a property username = boozang added on test-level, can be referenced {{$test.username}} (=boozang). Pro-tip: You can verify this in execution by printing it to your application console window by creating the following Javascript action $TW.console.log($test.username).
 
 
 Objects
 -------
-Objects in Boozang are the one-level sub-set of JSON objects and are dieal for grouping related data together. For instance, create the Object loginInfo and add username = boozang and password == p@ssw0rd. The data can be referenced by typing {{$test.loginInfo.username}} and {{$test.loginInfo.password}}.
+Objects in Boozang are the one-level sub-set of JSON objects and are ideal for grouping related data together. For instance, create the Object loginInfo and add username = boozang and password = p@ssw0rd. The data can be referenced by typing {{$test.loginInfo.username}} and {{$test.loginInfo.password}}.
 
 Array
 -----

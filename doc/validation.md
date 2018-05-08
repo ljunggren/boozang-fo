@@ -10,7 +10,7 @@ In a test it´s common to make sure that a certain outcome is acheieved. In Booz
 
 Validate Exists
 ---------------
-The default validation is "Validate Exists", that will simple verify that the element exists. To edit the validation conten format simply change it from the action detail page. The expectation value will be automatically updated. 
+The default validation is "Validate Exists", that will simple verify that the element exists. To edit the validation content format simply change it from the action detail page. The expectation value will be automatically updated. 
 
 
 Inner Text

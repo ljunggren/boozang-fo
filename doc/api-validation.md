@@ -28,7 +28,7 @@ When doing API calls it's very common that you need to add custom HTTP request h
 
 Doing HTTP POST validation
 --------------------------
-You can post data to an API end-pont using HTTP method POST. When doing thi make sure to add the POST data to the HTTP data field. 
+You can post data to an API end-pont using HTTP method POST. When doing this make sure to add the POST data to the HTTP data field. 
 
 Data
 ----

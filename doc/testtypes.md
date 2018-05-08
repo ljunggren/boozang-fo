@@ -16,7 +16,7 @@ Function tests perform a function and usually cleans up after themselves. Functi
 
 Composite Tests
 ---------------
-Composite tests are more complex tests, that stiches together atomic or unit tests. They are also used to build test suites, calling a list of function tests. As they are functionally very similar, it´s up to the test team how to best make use of the classification, and where the line between functiona and composite test should be drawn.
+Composite tests are more complex tests, that stiches together atomic or unit tests. They are also used to build test suites, calling a list of function tests. As they are functionally very similar, it´s up to the test team how to best make use of the classification, and where the line between function and composite test should be drawn.
 
 Bugs
 ----
