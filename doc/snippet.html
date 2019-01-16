@@ -240,23 +240,23 @@
                 <section class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
                     <h1 id="the-bz-snippet">The BZ snippet</h1>
 <h2 id="run-boozang-without-installation">Run Boozang without installation</h2>
-<p>The Boozang html snippet allows you to run the Boozang tool completely without a client-side installation, or browser extension. </p>
+<p>The Boozang HTML snippet allows you to run the Boozang tool completely without a client-side installation, or browser extension. </p>
 <h2 id="installation">Installation</h2>
 <p>To install the Boozang snippet first download it to your server. That can be done from the management UI at ai.boozang.com. The snippet is unique for every single project, so make sure not to get them mixed up. To activate your application for testing simply copy it to your application root. </p>
 <h2 id="renaming-the-fragment">Renaming the fragment</h2>
-<p>The fragment is called bz.html by default but can be renamed to anything. Sometimes you want to isolate different environments from each other for user access policy reason, but still have them in the same directory in your vrsioning system. In that case, you can name them bz-dev.html, bz-staging.html and bz-production.html. </p>
+<p>The fragment is called bz.html by default but can be renamed to anything. Sometimes you want to isolate different environments from each other for user access policy reason, but still, have them in the same directory in your versioning system. In that case, you can name them by-dev.html, bz-staging.html, and bz-production.html. </p>
 <h2 id="locating-your-application-root">Locating your application root</h2>
-<p>Different applications have different application roots. In a standard html application it will be where the index.html is located. In a standard Angular application it will be where the html files are published, like the public/ directory. </p>
+<p>Different applications have different application roots. In a standard HTML application it will be where the index.html is located. In a standard Angular application, it will be where the HTML files are published, as the public/ directory. </p>
 <h2 id="launching-the-boozang-tool">Launching the Boozang tool </h2>
-<p>After isntallation you can launch the application without the need for the Chrome extension. Do this by accessing the fragemnt in a web browser like</p>
+<p>After installation you can launch the application without the need for the Chrome extension. Do this by accessing the fragment in a web browser like</p>
 <p><a href="http://myapplication.com/bz.html">http://myapplication.com/bz.html</a></p>
 <p>or </p>
 <p><a href="http://myapplication.com/my-renamed-fragment.html">http://myapplication.com/my-renamed-fragment.html</a></p>
-<p>Any tests that have been created using the Chrome extension will still be available, and it´s possible to go between running the tool using the html snippet and Chrome extension.</p>
+<p>Any tests that have been created using the Chrome extension will still be available, and it´s possible to go between running the tool using the HTML snippet and Chrome extension.</p>
 <h2 id="cross-browser-testing">Cross-browser testing</h2>
-<p>Using the BZ fragemnt the Boozang tool can now be open in a variety of browsers without the need for any other client install. Current browsers supported are Google Chrome, Firefox, Safari and Opera. We recommend that you use one primary browser for authoring the tests, then running them across the difference browsers. </p>
+<p>Using the BZ fragment the Boozang tool can now be open in a variety of browsers without the need for any other client install. Current browsers supported are Google Chrome, Firefox, Safari, and Opera. We recommend that you use one primary browser for authoring the tests, then running them across the different browsers. </p>
 <h2 id="user-credentials">User credentials</h2>
-<p>In a secure environment you can add your user credentials to the bz-fragment to avoid entering user credentials. One way to do it is to create a personalized copy of your bz-fragment</p>
+<p>In a secure environment, you can add your user credentials to the bz-fragment to avoid entering user credentials. One way to do it is to create a personalized copy of your bz-fragment</p>
 <pre><code class="language-yaml">cd webroot
 cp bz.html bz-mats.html</code></pre>
 <p>and adding the user credentials the following way</p>
@@ -265,7 +265,7 @@ cp bz.html bz-mats.html</code></pre>
 username="email@domain.com";
 password="password";
 &lt;/script&gt;</code></pre>
-<p>This can be particularly useful when running cross-browser testing to avoind entering login credentials. </p>
+<p>This can be particularly useful when running cross-browser testing to avoid entering login credentials. </p>
                 </section>
 
             </div>

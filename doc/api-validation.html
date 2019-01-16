@@ -240,22 +240,22 @@
                 <section class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
                     <h1 id="validation-of-api-end-points">Validation of API end-points</h1>
 <h2 id="useful-resources">Useful resources</h2>
-<p>In order to simply mockup a REST server we strongly recommend <a href="https://github.com/typicode/json-server">https://github.com/typicode/json-server</a> that allows you to create a fake REST API from a JSON file in less than 30 seconds. </p>
+<p>In order to simply mockup a REST server, we strongly recommend <a href="https://github.com/typicode/json-server">https://github.com/typicode/json-server</a> that allows you to create a fake REST API from a JSON file in less than 30 seconds. </p>
 <h2 id="introduction-to-api-validations">Introduction to API validations</h2>
-<p>The API validation is very similar to a HTML validation except that the validation is done towards an API end-point. Simply click on the Plus-sign and choose &quot;Validation&quot;, and select Request/Response (API). In actions details you can now input the API end-point URL and HTTP method (GET, POST, DELETE, etc.).</p>
+<p>The API validation is very similar to an HTML validation except that the validation is done towards an API end-point. Simply click on the Plus-sign and choose &quot;Validation&quot;, and select Request/Response (API). In actions details, you can now input the API end-point URL and HTTP method (GET, POST, DELETE, etc.).</p>
 <h2 id="doing-http-get-validation">Doing HTTP GET validation</h2>
-<p>Use HTTP method GET to validate a response from a REST API. Simply select HTTP method GET and enter the end-point URL. Click Play on the action to automatically populate the expectation value. </p>
-<h2 id="doing-a-http-get-without-validation">Doing a HTTP GET without validation</h2>
-<p>In order to trigger the HTTP GET without validating the result simply use comparison operator to &quot;regexp&quot; and set the expectation field to &quot;.*&quot;. </p>
+<p>Use the HTTP method GET to validate a response from a REST API. Simply select HTTP method GET and enter the end-point URL. Click Play on the action to automatically populate the expectation value. </p>
+<h2 id="doing-an-http-get-without-validation">Doing an HTTP GET without validation</h2>
+<p>In order to trigger the HTTP GET without validating the result simply use a comparison operator to &quot;regexp&quot; and set the expectation field to &quot;.*&quot;. </p>
 <h2 id="adding-custom-headers">Adding custom headers</h2>
-<p>When doing API calls it's very common that you need to add custom HTTP request headers. In order to do this click HTTP headers and add header data. This needs to be in data format, i.e.</p>
+<p>When doing API calls it's very common that you need to add custom HTTP request headers. In order to do this click HTTP header and add header data. This needs to be in data format, i.e.</p>
 <p>{
 Accept:&quot;json&quot;
 }</p>
 <h2 id="doing-http-post-validation">Doing HTTP POST validation</h2>
-<p>You can post data to an API end-pont using HTTP method POST. When doing this make sure to add the POST data to the HTTP data field. </p>
+<p>You can post data to an API end-point using HTTP method POST. When doing this make sure to add the POST data to the HTTP data field. </p>
 <h2 id="data">Data</h2>
-<p>In all these fields you can also bind data. As an example, in order to set headers as data this can be done as an object, for instance &quot;jsonheader&quot;,&quot;Accept&quot;,&quot;json&quot;. In order to reference it on the actions details use {{$test.jsonheader}} in the header field. </p>
+<p>In all these fields you can also bind data. As an example, in order to set headers as data this can be done as an object, for instance, &quot;jsonheader&quot;,&quot;Accept&quot;,&quot;json&quot;. In order to reference it on the actions-details use {{$test.jsonheader}} in the header field. </p>
                 </section>
 
             </div>
