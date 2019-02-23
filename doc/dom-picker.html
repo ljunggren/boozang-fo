@@ -193,9 +193,73 @@
 
                 
                 <section class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
-                    <h1 id="running-from-command-line">Running from command line</h1>
-<h2 id="the-bz-fragment">The bz fragment</h2>
-<p>In order to run Boozang from command line you have the option of installing the bz-fragment or use the extension. As Chrome extensions is not supported in Chrome headless mode, we recommend you install the bz fragment. </p>
+                    <h1 id="the-dom-picker">The DOM picker</h1>
+<h2 id="the-boozang-elment-path">The Boozang elment path</h2>
+<p>Boozang uses </p>
+<h2 id="the-dom-picker-window">The DOM picker window</h2>
+<p>For this reason, to be able to deliver new features fast without forcing the end user to re-learn, we added an online help function inside the tool. Simply click the question mark in the user interface, and click the functionality and an explanation will appear. </p>
+<p><img src="../images/dom-picker.png" alt="example image" title="An exemplary image" /></p>
+<h2 id="element-path-operation">Element path operation</h2>
+<p>The element path has the following operations. We've expanded the jQuery selction standard to create a more human-readable code to identify elements. The basic pattern is that the lowercase jQuery standard operations, while uppercase operations are case-insensitive. All recorded recorded will generate Uppercase operations. The operations that will be recorded for a test-case is marked by an asterix (*) </p>
+<ul>
+<li>
+<p>match (*):  Is true if the selected element (case-insensitive) have the exact string alongside other strings</p>
+<pre><code>Ex:div:match(lws)
+Yes:&lt;div&gt;lws ok&lt;/div&gt;
+No:&lt;div&gt;lwsok&lt;/div&gt;
+Yes:&lt;div&gt;lws &lt;span&gt;ok&lt;/span&gt;&lt;/div&gt;
+No: &lt;div&gt;&lt;span&gt;lws&lt;/span&gt;&lt;/div&gt;</code></pre>
+</li>
+<li>
+<p>equals (*): Is true if the selected element (case-insensitive) have the exact string</p>
+<pre><code>Ex:div:equals(lws)
+Yes:&lt;div&gt;lws&lt;/div&gt;
+No: &lt;div&gt;lws ok&lt;/div&gt;
+No: &lt;div&gt;lwsok&lt;/div&gt;
+No: &lt;div&gt;&lt;span&gt;lws&lt;/span&gt;&lt;/div&gt;</code></pre>
+</li>
+<li>matchAllChildren: Is true if the selected element or any of it's children (case-sensitive) have the exact string alongside other strings
+<pre><code>Ex:div:equal(lws)
+Yes:&lt;div&gt;&lt;span&gt;lws&lt;/span&gt;&lt;/div&gt;
+No: &lt;div&gt;lws ok&lt;/div&gt;</code></pre></li>
+<li>
+<p>equalsAllChildren (*): Is true if the selected element or any it's children (case-insensitive) matches</p>
+<pre><code>Ex: div:Contains(lws)
+Yes:&lt;div&gt;&lt;span&gt;LWs ok&lt;/span&gt;&lt;/div&gt;
+No: &lt;div&gt;lwsok&lt;/div&gt;</code></pre>
+</li>
+<li>
+<p>matchAllChildren: Is true if the selected element and all it's children (case-insensitive) matches</p>
+<pre><code>Ex: div:Contains(lws)
+Yes:&lt;div&gt;&lt;span&gt;lws ok&lt;/span&gt;&lt;/div&gt;
+Yes:&lt;div&gt;lwsok&lt;/div&gt;
+No: &lt;div&gt;lwok&lt;/div&gt;</code></pre>
+</li>
+<li>
+<p>RowCol (*):</p>
+<pre><code>Ex: TD:RowCol([value|name])
+Yes:&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;name&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;value&lt;/td&gt;&lt;td&gt;1234&lt;/td&gt;&lt;/tr&gt;
+
+No: &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;name&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;VALUE&lt;/td&gt;&lt;td&gt;1234&lt;/td&gt;&lt;/tr&gt;</code></pre>
+</li>
+<li>
+<p>rowcol:</p>
+<pre><code>Ex: TD:rowcol([value|name])
+Yes:&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;NAME&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;VALUE&lt;/td&gt;&lt;td&gt;1234&lt;/td&gt;&lt;/tr&gt;
+
+No: &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;name&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;value1&lt;/td&gt;&lt;td&gt;1234&lt;/td&gt;&lt;/tr&gt;</code></pre>
+</li>
+<li>near (*):
+<pre><code>Ex: input:near(name)
+Yes:&lt;div&gt;&lt;label&gt;name: &lt;input/&gt;&lt;/label&gt;&lt;/div&gt;
+Yes:&lt;div&gt;&lt;label&gt;name: &lt;/label&gt;&lt;input/&gt;&lt;/div&gt;
+Yes:&lt;tr&gt;&lt;td&gt;Name&lt;/td&gt;&lt;td&gt;&lt;input/&gt;&lt;/td&gt;&lt;/tr&gt;
+No: &lt;div&gt;name&lt;/div&gt;&lt;div&gt;&lt;label&gt;value&lt;/label&gt;&lt;input/&gt;&lt;/div&gt;</code></pre></li>
+</ul>
                 </section>
 
             </div>
